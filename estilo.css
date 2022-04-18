@@ -5,7 +5,7 @@
 }
 
 .grid{
-    background-color: grey;
+    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
     background-image: url(./Fotos_y_videos/background8.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,7 +15,8 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 2fr 0,5fr 2fr 0,3fr 1fr;
-    gap: 5px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
     grid-template-areas:
     "header header"
     "ultimasNoticias noticiasDeLaSemana"
@@ -23,10 +24,10 @@
     "noticiasVarias noticiasVarias"
     "publicidadSecundaria publicidadSecundaria"
     "footer footer";
-    align-content: space-around; 
+    align-content: space-around;
 }
 .quienesSomos{
-    background-color: grey;
+    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
     background-image: url(./Fotos_y_videos/background8.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,7 +37,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 2fr  0.5fr;
-    gap: 5px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
     grid-template-areas:
     "header"
     "nosotros"
@@ -44,7 +46,7 @@
     align-content: space-around; 
 }
 .fuerzasVivas{
-    background-color: grey;
+    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
     background-image: url(./Fotos_y_videos/background8.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,7 +56,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 2fr  0.5fr;
-    gap: 5px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
     grid-template-areas:
     "header"
     "instituciones"
@@ -62,7 +65,7 @@
     align-content: space-around;  
 }
 .noticiasPoliciales{
-    background-color: grey;
+    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
     background-image: url(./Fotos_y_videos/background8.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,7 +75,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 2fr  0.5fr;
-    gap: 5px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
     grid-template-areas:
     "header"
     "policiales"
@@ -80,7 +84,7 @@
     align-content: space-around;  
 }
 .noticiasNecrologicas{
-    background-color: grey;
+    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
     background-image: url(./Fotos_y_videos/background8.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,7 +94,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 2fr  0.3fr;
-    gap: 5px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
     grid-template-areas:
     "header"
     "necrologicas"
@@ -98,7 +103,7 @@
     align-content: space-around;  
 }
 .noticiasMutual{
-    background-color: grey;
+    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
     background-image: url(./Fotos_y_videos/background8.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,7 +113,8 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 2fr  0.3fr;
-    gap: 5px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
     grid-template-areas:
     "header"
     "mutual"
@@ -116,7 +122,7 @@
     align-content: space-around;  
 }
 .vecinoMirate{
-    background-color: grey;
+    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
     background-image: url(./Fotos_y_videos/background8.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -126,15 +132,16 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 2fr  0.3fr;
-    gap: 5px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
     grid-template-areas:
     "header"
     "mirate"
     "footer";
-    align-content: space-around;  
+    align-content: space-around;
 }
 .noticiasCooperativa{
-    background-color: grey;
+    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
     background-image: url(./Fotos_y_videos/background8.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -144,15 +151,16 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 2fr  0.3fr;
-    gap: 5px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
     grid-template-areas:
     "header"
     "cooperativa"
     "footer";
-    align-content: space-around;  
+    align-content: space-around;
 }
 .loguin{
-    background-color: grey;
+    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
     background-image: url(./Fotos_y_videos/background8.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,15 +170,16 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr  0.5fr;
-    gap: 5px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
     grid-template-areas:
     "header"
     "loguearse"
     "footer";
-    align-content: space-around;  
+    align-content: space-around;
 }
 .iniciarSesion{
-    background-color: grey;
+    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
     background-image: url(./Fotos_y_videos/background8.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -180,20 +189,21 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr  0.5fr;
-    gap: 5px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
     grid-template-areas:
     "header"
     "sesion"
     "footer";
-    align-content: space-around;  
+    align-content: space-around;
 }
 
 
 .header, .ultimasNoticias, .noticiasDeLaSemana, .noticiasVarias, .publicidadPrincipal, .publicidadSecundaria, .footer{
     border-radius: 10px;
-} 
+}
 .header{
-    grid-area: header;  
+    grid-area: header;
 }
 .ultimasNoticias{
     grid-area: ultimasNoticias;
@@ -211,8 +221,7 @@
     justify-content: space-around;
     align-items: center;
     align-content: center;
-    overflow: auto;     
-    
+    overflow: auto;
 }
 .noticiasDeLaSemana{
     grid-area: noticiasDeLaSemana;
@@ -225,15 +234,13 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     display: flex;
-
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
     border-right: double black 5px;
     border-left: double black 5px;
     display: inline-block;
     overflow: auto;
     align-self: flex-start;
-   
 }
 .publicidadPrincipal{
     grid-area: publicidadPrincipal;
@@ -245,9 +252,9 @@
     border-bottom: 5px black double;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center; 
+    align-items: center;
 }
 .noticiasVarias{
     grid-area: noticiasVarias;
@@ -262,10 +269,9 @@
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     align-items:flex-start;
-    align-content:flex-start; 
-   
+    align-content:flex-start;
 }
 .publicidadSecundaria{
     grid-area: publicidadSecundaria;
@@ -315,7 +321,7 @@
 }
 .menu li a:hover{
     background-color: beige;
-    color: black;   
+    color: black;
 }
 .buscador {
     position: fixed;
@@ -335,7 +341,6 @@
     font-size: 16px;
     margin: 5px;
     padding: 2px;
-   
 }
 .nosotros{
     grid-area: nosotros;
@@ -350,10 +355,9 @@
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     align-items:flex-start;
-    align-content:flex-start; 
-   
+    align-content:flex-start;
 }
 .instituciones{
     grid-area: instituciones;
@@ -368,9 +372,9 @@
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     align-items:flex-start;
-    align-content:flex-start;    
+    align-content:flex-start;
 }
 .policiales{
     grid-area: policiales;
@@ -469,7 +473,7 @@
     align-items:center;
     align-content:center;  
 }
-sesion{
+.sesion{
     grid-area: sesion;
     padding: 1rem;
     margin: 0.5rem;
@@ -488,8 +492,8 @@ sesion{
     text-decoration: underline;
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
-   
 }
+
 .titulo_secundario {
     text-align: center;
     color: beige;
@@ -502,23 +506,125 @@ sesion{
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
 }
-
+.logoPrincipal{
+    transition: all 0.5s;
+}
+.logoPrincipal:hover{
+    transform: scale(1.05)
+}
 
 .fotoNoticiaDeLaSemana{
     width: 70%;
+    transition: all 0.5s;
 }
+.fotoNoticiaDeLaSemana:hover{
+    transform: scale(1.05);
+}
+
 .imagenPublicidadPrincipal{
     width: 90%;
     height: 13rem;
-    
+    animation-name: animation;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-delay: 10s;
+}
+@keyframes animation{
+    0%{
+        width: 15%;
+        height: 13rem;
+        opacity: 0.4;
+    }
+    25%{
+        width: 30%;
+        height: 13rem;
+        opacity: 0.5;
+    }
+    37%{
+        width: 45%;
+        height: 13rem;
+        opacity: 0.6;
+    }
+    50%{
+        width: 50%;
+        height: 13rem;
+        opacity: 0.7;
+    }
+    63%{
+        width: 60%;
+        height: 13rem;
+        opacity: 0.8;
+    }
+    75%{
+        width: 70%;
+        height: 13rem;
+        opacity: 0.9;
+    }
+    88%{
+        width: 80%;
+        height: 13rem;
+        opacity: 1;
+    }
+    100%{
+        width: 90%;
+        height: 13rem;
+        opacity: 1;
+    }
 }
 .imagenPublicidadSecundaria{
     width: 32%;
     height: 8rem;
+    animation-name: animatio2;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-delay: 10s;
+}
+@keyframes animatio2{
+    0%{
+        width: 5%;
+        height: 8rem;
+        opacity: 0.4;
+    }
+    25%{
+        width: 10%;
+        height: 8rem;
+        opacity: 0.5;
+    }
+    37%{
+        width: 12%;
+        height: 8rem;
+        opacity: 0.6;
+    }
+    50%{
+        width: 15%;
+        height: 8rem;
+        opacity: 0.7;
+    }
+    63%{
+        width: 20%;
+        height: 8rem;
+        opacity: 0.8;
+    }
+    75%{
+        width: 27%;
+        height: 8rem;
+        opacity: 0.9;
+    }
+    88%{
+        width: 30%;
+        height: 8rem;
+        opacity: 1;
+    }
+    100%{
+        width: 32%;
+        height: 8rem;
+        opacity: 1;
+    }
 }
 .logoPrincipal{
     width: 30%;
-   
 }
 .logoFooter{
     width: 30%;
@@ -541,10 +647,13 @@ sesion{
     padding: 0.5rem;
     opacity: 0.6;
     border: 1px double goldenrod;
+    transition: all 0.5s;
 }
 .fotoUltimasNoticias:hover{
     opacity: 1;
     border: 1px solid yellow;
+    transform: scale(1.05);
+    border-radius: 10px;
 }
 
 .videoSecundario{
@@ -606,7 +715,6 @@ sesion{
         "noticiasVarias"
         "publicidadSecundaria"
         "footer";
-        
     }
     .quienesSomos{
         background-color: grey;
@@ -624,9 +732,8 @@ sesion{
         "header"
         "nosotros"
         "footer";
-        align-content: space-around; 
+        align-content: space-around;
     }
-   
     .fuerzasVivas{
         background-color: grey;
         background-image: url(./Fotos_y_videos/background8.png);
@@ -715,7 +822,7 @@ sesion{
         "header"
         "mirate"
         "footer";
-        align-content: space-around;  
+        align-content: space-around;
     }
     .noticiasCooperativa{
         background-color: grey;
@@ -733,7 +840,7 @@ sesion{
         "header"
         "cooperativa"
         "footer";
-        align-content: space-around;  
+        align-content: space-around;
     }
     .loguin{
         background-color: grey;
@@ -769,15 +876,31 @@ sesion{
         "header"
         "sesion"
         "footer";
-        align-content: space-around;  
+        align-content: space-around;
     }
     .titulo_principal{
+        font-size: 3rem;
+    }
+    .titulo_secundario{
         font-size: 2rem;
     }
-    
+    p{
+        font-size: 1.5rem;
+    }
+    .fotoUltimasNoticias{
+        width: 20rem;
+    }
+    .fotoNoticiaDeLaSemana{
+        width: 18rem;
+    }
+    .videoCentral{
+        width: 20rem;
+    }
+    .videoSecundario{
+        width: 10rem;
+    }
     .logoPrincipal{
         width: 40%;
-       
     }
     .menu ul{
         list-style: none;
@@ -791,7 +914,6 @@ sesion{
     .menu li a{
         color: black;
         text-decoration: none;
-        
         font-size: 10px;
         font-family: 'Open Sans', sans-serif;
     }
