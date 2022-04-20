@@ -6,79 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel= "shortcut icon" href="./Fotos_y_videos/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/estilo.css">
     <link href=<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap" rel="stylesheet">
-    
     <title>templeinforma.com</title>
 </head>
 <body>
     <!--Comienza la página-->
-    <div class="noticiasNecrologicas">
-        <nav class="header">Navegacion y logo
-            <nav class="menu">
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="que_es_temple_informa.html">¿Qué es Temple Informa?</a></li>
-                    <li><a href="noticias_institucionales.html">Noticias Institucionales</a></li>
-                    <li><a href="policiales.html">Policiales</a></li>
-                    <li><a href="necrologicas.html">Necrológicas</a></li>
-                    <li><a href="coope_noticias.html">Coope Noticias</a></li>
-                    <li><a href="noticias_de_la_mutual.html">Noticias de la Mutual</a></li>
-                    <li><a href="mirate.html">Mirate</a></li>
-                    <li><a href="inicio_de_sesión.html">Inicio de Sesión</a></li>
-                </ul>     
-            </nav>
-            <ul class="buscador">
-                <li> <a href=""></a> ¿Qué noticia estás buscando?
-            </ul>  
-            <img id="arriba" src="./Fotos_y_videos/Temple_Informa_Logo_sin_fondo_recortado.png" class="logoPrincipal" alt="Logo de Temple Informa">
-            <h1 class="titulo_principal animate__animated animate__fadeInDown">Noticias Necrológicas</h1> 
+    <div class="grid" class="container">
+        <nav class="header">
+            <nav class="navbar navbar-expand-lg col-12 navbar-dark bg-dark mb-5">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                      <img src="./Fotos_y_videos/Temple_Informa_Logo_sin_fondo_recortado.png" alt="" width="260">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./que_es_temple_informa.html">¿Qué es Temple Informa?</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./noticias_institucionales.html">Noticias Institucionales</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./noticias_de_la_mutual.html">Noticias de Coope y Mutual</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./policiales.html">Policiales</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./necrologicas.html">Necrológicas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./mirate.html">Mirate</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./inicio_de_sesion.html">Inicio de sesión</a>
+                      </li>
+                      
+                    </ul>
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="¿Qué noticia buscás?" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+            
         </nav>
         <section class="necrologicas">
-                <img class="videoCentral animate__animated animate__fadeIn" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
-                <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
-                <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
-                <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
-                <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
-                <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
-                <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
-                <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
-                <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
-                <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
-                <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
-                       
+            <h2 class="titulo_principal text-center animate__animated animate__fadeInDown">Noticias Necrológicas</h2>
+            <img class="videoCentral animate__animated animate__fadeIn" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
+            <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
+            <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
+            <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
+            <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
+            <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
+            <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
+            <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
+            <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
+            <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
+            <img class="videoSecundario" src="./Fotos_y_videos/Necrol+¦gica.png"><img>
+                   
         </section>
-        <footer class="footer">
+        <sectio class="publicidadPrincipal"><!--Publicidad principal de la página-->
+         <img class="imagenPublicidadPrincipal" src="./Fotos_y_videos/Publicidad1.jpg" alt="imagen publicitaria">
+        </sectio>
+        <footer class="footer bg-dark">
             <img src="./Fotos_y_videos/Logo_canal_sin_fondo.png" class="logoFooter" alt="Logo del canal Templetv">
-            <section class="data">
-                <ul>
-                    <li><a href="https://www.instagram.com/canaldostempletvcba/?hl=es-la">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/canaldos.templetv/">Facebook</a></li>
-                <ul>
-                <ul>
-                    <li>Contacto 3574 402493</li>
-                    <li>Mail canaldos@gmailo.com</li>
-                </ul>
-                <ul>
-                    <li>Canaldos Templetv</li>
-                    <li>Producido por Moebius</li>
-                </ul>
-            <section>
-            <br>
-            <ul class="subir">
-                <li><a href="#arriba">Ir arriba</a></li>
+        <section class="data">
+            <ul>
+                <li><a href="https://www.instagram.com/canaldostempletvcba/?hl=es-la">Instagram</a></li>
+                <li><a href="https://www.facebook.com/canaldos.templetv/">Facebook</a></li>
+            <ul>
+            <ul>
+                <li>Contacto 3574 402493</li>
+                <li>Mail canaldos@gmailo.com</li>
             </ul>
+            <ul>
+                <li>Canaldos Templetv</li>
+                <li>Producido por Moebius</li>
+            </ul>
+        <section>
+        <br>
+        <ul class="subir">
+            <li><a href="#arriba">Ir arriba</a></li>
+        </ul>
         </footer>
     </div>
-    
+    <script src="js/wow.min.js"></script>
+        <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
 </body>
-
 </html>
-
-
-
-

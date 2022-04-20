@@ -5,30 +5,13 @@
 }
 
 .grid{
-    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
-    background-image: url(./Fotos_y_videos/background8.png);
+    background-image: url("/Fotos_y_videos/background8.png");
     background-repeat: no-repeat;
     background-size: cover;
-    width: 99%;
-    margin: 10px auto;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 2fr 0,5fr 2fr 0,3fr 1fr;
-    grid-row-gap: 5px;
-    grid-column-gap: 5px;
-    grid-template-areas:
-    "header header"
-    "ultimasNoticias noticiasDeLaSemana"
-    "publicidadPrincipal publicidadPrincipal"
-    "noticiasVarias noticiasVarias"
-    "publicidadSecundaria publicidadSecundaria"
-    "footer footer";
-    align-content: space-around;
+    
 }
 .quienesSomos{
-    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
-    background-image: url(./Fotos_y_videos/background8.png);
+    background-image: url("/Fotos_y_videos/background8.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 99%;
@@ -46,8 +29,7 @@
     align-content: space-around; 
 }
 .fuerzasVivas{
-    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
-    background-image: url(./Fotos_y_videos/background8.png);
+    background-image: url("/Fotos_y_videos/background8.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 99%;
@@ -65,8 +47,7 @@
     align-content: space-around;  
 }
 .noticiasPoliciales{
-    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
-    background-image: url(./Fotos_y_videos/background8.png);
+    background-image: url("/Fotos_y_videos/background8.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 99%;
@@ -84,8 +65,7 @@
     align-content: space-around;  
 }
 .noticiasNecrologicas{
-    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
-    background-image: url(./Fotos_y_videos/background8.png);
+    background-image: url("/Fotos_y_videos/background8.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 99%;
@@ -100,11 +80,10 @@
     "header"
     "necrologicas"
     "footer";
-    align-content: space-around;  
+    align-content: space-around;
 }
 .noticiasMutual{
-    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
-    background-image: url(./Fotos_y_videos/background8.png);
+    background-image: url("/Fotos_y_videos/background8.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 99%;
@@ -119,11 +98,10 @@
     "header"
     "mutual"
     "footer";
-    align-content: space-around;  
+    align-content: space-around;
 }
 .vecinoMirate{
-    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
-    background-image: url(./Fotos_y_videos/background8.png);
+    background-image: url("/Fotos_y_videos/background8.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 99%;
@@ -141,8 +119,7 @@
     align-content: space-around;
 }
 .noticiasCooperativa{
-    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
-    background-image: url(./Fotos_y_videos/background8.png);
+    background-image: url("/Fotos_y_videos/background8.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 99%;
@@ -160,8 +137,7 @@
     align-content: space-around;
 }
 .loguin{
-    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
-    background-image: url(./Fotos_y_videos/background8.png);
+    background-image: url("/Fotos_y_videos/background8.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 99%;
@@ -179,8 +155,7 @@
     align-content: space-around;
 }
 .iniciarSesion{
-    background-image: linear-gradient(to right, rgb(27, 27, 27), rgb(49, 48, 48));
-    background-image: url(./Fotos_y_videos/background8.png);
+    background-image: url("/Fotos_y_videos/background8.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 99%;
@@ -389,10 +364,10 @@
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     align-items:flex-start;
-    align-content:flex-start;    
-} 
+    align-content:flex-start;
+}
 .necrologicas{
     grid-area: necrologicas;
     padding: 1rem;
@@ -406,9 +381,9 @@
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     align-items:flex-start;
-    align-content:flex-start;  
+    align-content:flex-start;
 }
 .mutual{
     grid-area: mutual;
@@ -423,9 +398,9 @@
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     align-items:flex-start;
-    align-content:flex-start;  
+    align-content:flex-start;
 }
 .mirate{
     grid-area: mirate;
@@ -440,9 +415,9 @@
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     align-items:flex-start;
-    align-content:flex-start;  
+    align-content:flex-start;
 }
 .cooperativa{
     grid-area: cooperativa;
@@ -457,9 +432,9 @@
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     align-items:flex-start;
-    align-content:flex-start;  
+    align-content:flex-start;
 }
 .loguearse{
     grid-area: loguearse;
@@ -471,7 +446,7 @@
     font-size: 1rem;
     display: flex;
     align-items:center;
-    align-content:center;  
+    align-content:center;
 }
 .sesion{
     grid-area: sesion;
@@ -483,7 +458,7 @@
     font-size: 1rem;
     display: flex;
     align-items:center;
-    align-content:center;  
+    align-content:center;
 }
 
 .titulo_principal {
@@ -499,7 +474,7 @@
     color: beige;
     text-decoration: underline;
     font-family: 'Poppins', sans-serif;
-    font-size: 2rem;  
+    font-size: 2rem;
 }
 .subtitulo_imagen {
     color: beige;
@@ -707,7 +682,7 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.3fr 0.5fr 1fr 0.2fr 0.6fr 0.2fr 0.3fr;
-        grid-template-areas: 
+        grid-template-areas:
         "header"
         "ultimasNoticias"
         "noticiasDeLaSemana"
@@ -750,7 +725,7 @@
         "header"
         "instituciones"
         "footer";
-        align-content: space-around;  
+        align-content: space-around;
     }
     .noticiasPoliciales{
         background-color: grey;
@@ -768,7 +743,7 @@
         "header"
         "policiales"
         "footer";
-        align-content: space-around;  
+        align-content: space-around;
     }
     .noticiasNecrologicas{
         background-color: grey;
@@ -786,7 +761,7 @@
         "header"
         "necrologicas"
         "footer";
-        align-content: space-around;  
+        align-content: space-around;
     }
     .noticiasMutual{
         background-color: grey;
@@ -804,7 +779,7 @@
         "header"
         "mutual"
         "footer";
-        align-content: space-around;  
+        align-content: space-around;
     }
     .vecinoMirate{
         background-color: grey;
@@ -858,7 +833,7 @@
         "header"
         "loguearse"
         "footer";
-        align-content: space-around;  
+        align-content: space-around;
     }
     .iniciarSesion{
         background-color: grey;
@@ -919,7 +894,7 @@
     }
     .menu li a:hover{
         background-color: black;
-        color: white;   
+        color: white;
     }
     .buscador {
         position: fixed;
@@ -939,9 +914,8 @@
         font-size: 10px;
         margin: 5px;
         padding: 2px;
-       
+
     }
-    
 }
 
 
