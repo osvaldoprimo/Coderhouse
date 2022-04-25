@@ -1,0 +1,1222 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.grid {
+  background-image: url("/Fotos_y_videos/background8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quienesSomos {
+  background-image: url("/Fotos_y_videos/background8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 99%;
+  margin: 10px auto;
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.5fr 2fr  0.5fr;
+      grid-template-rows: 0.5fr 2fr  0.5fr;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+      grid-template-areas: "header" "nosotros" "footer";
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.fuerzasVivas {
+  background-image: url("/Fotos_y_videos/background8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 99%;
+  margin: 10px auto;
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.5fr 2fr  0.5fr;
+      grid-template-rows: 0.5fr 2fr  0.5fr;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+      grid-template-areas: "header" "instituciones" "footer";
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.noticiasPoliciales {
+  background-image: url("/Fotos_y_videos/background8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 99%;
+  margin: 10px auto;
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.5fr 2fr  0.5fr;
+      grid-template-rows: 0.5fr 2fr  0.5fr;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+      grid-template-areas: "header" "policiales" "footer";
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.noticiasNecrologicas {
+  background-image: url("/Fotos_y_videos/background8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 99%;
+  margin: 10px auto;
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.3fr 2fr  0.3fr;
+      grid-template-rows: 0.3fr 2fr  0.3fr;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+      grid-template-areas: "header" "necrologicas" "footer";
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.noticiasMutual {
+  background-image: url("/Fotos_y_videos/background8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 99%;
+  margin: 10px auto;
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.3fr 2fr  0.3fr;
+      grid-template-rows: 0.3fr 2fr  0.3fr;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+      grid-template-areas: "header" "mutual" "footer";
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.vecinoMirate {
+  background-image: url("/Fotos_y_videos/background8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 99%;
+  margin: 10px auto;
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.3fr 2fr  0.3fr;
+      grid-template-rows: 0.3fr 2fr  0.3fr;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+      grid-template-areas: "header" "mirate" "footer";
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.noticiasCooperativa {
+  background-image: url("/Fotos_y_videos/background8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 99%;
+  margin: 10px auto;
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.3fr 2fr  0.3fr;
+      grid-template-rows: 0.3fr 2fr  0.3fr;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+      grid-template-areas: "header" "cooperativa" "footer";
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.loguin {
+  background-image: url("/Fotos_y_videos/background8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 99%;
+  margin: 10px auto;
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.5fr 1fr  0.5fr;
+      grid-template-rows: 0.5fr 1fr  0.5fr;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+      grid-template-areas: "header" "loguearse" "footer";
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.iniciarSesion {
+  background-image: url("/Fotos_y_videos/background8.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 99%;
+  margin: 10px auto;
+  padding: 0.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 0.5fr 1fr  0.5fr;
+      grid-template-rows: 0.5fr 1fr  0.5fr;
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+      grid-template-areas: "header" "sesion" "footer";
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+
+.header, .ultimasNoticias, .noticiasDeLaSemana, .noticiasVarias, .publicidadPrincipal, .publicidadSecundaria, .footer {
+  border-radius: 10px;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+.ultimasNoticias {
+  background-color: #353333;
+  border: black double 5px;
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.noticiasDeLaSemana {
+  grid-area: noticiasDeLaSemana;
+  background-color: #353333;
+  border: black double 5px;
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+}
+
+.publicidadPrincipal {
+  grid-area: publicidadPrincipal;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #353333;
+  border: black double 5px;
+  border-top: 5px black double;
+  border-bottom: 5px black double;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.noticiasVarias {
+  grid-area: noticiasVarias;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #353333;
+  border: black double 5px;
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.publicidadSecundaria {
+  grid-area: publicidadSecundaria;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #353333;
+  border: black double 5px;
+  border-top: 5px black double;
+  border-bottom: 5px black double;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu {
+  padding: 1rem;
+}
+
+.menu ul {
+  list-style: none;
+  background-color: black;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0.2px;
+  right: 0.2px;
+  left: 0.2px;
+  z-index: 1;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: .5rem, 1rem;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.menu li a:hover {
+  background-color: beige;
+  color: black;
+}
+
+.buscador {
+  position: fixed;
+  top: 65px;
+  right: 25px;
+  z-index: 2;
+  background-color: white;
+  border-radius: 40%;
+  list-style: none;
+  text-decoration: none;
+}
+
+.buscador li {
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: #053b69;
+  font-size: 16px;
+  margin: 5px;
+  padding: 2px;
+}
+
+.nosotros {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: nosotros;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #353333;
+  border: black double 5px;
+  text-align: justify;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.instituciones {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: instituciones;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #353333;
+  border: black double 5px;
+  text-align: justify;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.policiales {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: policiales;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #353333;
+  border: black double 5px;
+  text-align: justify;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.necrologicas {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: necrologicas;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #353333;
+  border: black double 5px;
+  text-align: justify;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.mutual {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: mutual;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #353333;
+  border: black double 5px;
+  text-align: justify;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.mirate {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: mirate;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #353333;
+  border: black double 5px;
+  text-align: justify;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.cooperativa {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: cooperativa;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: #353333;
+  border: black double 5px;
+  text-align: justify;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+.loguearse {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: loguearse;
+  padding: 1rem;
+  margin: 0.5rem;
+  text-align: justify;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.sesion {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sesion;
+  padding: 1rem;
+  margin: 0.5rem;
+  text-align: justify;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.titulo_principal {
+  text-align: left;
+  color: beige;
+  text-decoration: underline;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+}
+
+.titulo_secundario {
+  text-align: center;
+  color: beige;
+  text-decoration: underline;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+}
+
+.subtitulo_imagen {
+  color: beige;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.logoPrincipal {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.logoPrincipal:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.fotoNoticiaDeLaSemana {
+  width: 70%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.fotoNoticiaDeLaSemana:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.imagenPublicidadPrincipal {
+  width: 90%;
+  height: 13rem;
+  -webkit-animation-name: animation;
+          animation-name: animation;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+@-webkit-keyframes animation {
+  0% {
+    width: 15%;
+    height: 13rem;
+    opacity: 0.4;
+  }
+  25% {
+    width: 30%;
+    height: 13rem;
+    opacity: 0.5;
+  }
+  37% {
+    width: 45%;
+    height: 13rem;
+    opacity: 0.6;
+  }
+  50% {
+    width: 50%;
+    height: 13rem;
+    opacity: 0.7;
+  }
+  63% {
+    width: 60%;
+    height: 13rem;
+    opacity: 0.8;
+  }
+  75% {
+    width: 70%;
+    height: 13rem;
+    opacity: 0.9;
+  }
+  88% {
+    width: 80%;
+    height: 13rem;
+    opacity: 1;
+  }
+  100% {
+    width: 90%;
+    height: 13rem;
+    opacity: 1;
+  }
+}
+
+@keyframes animation {
+  0% {
+    width: 15%;
+    height: 13rem;
+    opacity: 0.4;
+  }
+  25% {
+    width: 30%;
+    height: 13rem;
+    opacity: 0.5;
+  }
+  37% {
+    width: 45%;
+    height: 13rem;
+    opacity: 0.6;
+  }
+  50% {
+    width: 50%;
+    height: 13rem;
+    opacity: 0.7;
+  }
+  63% {
+    width: 60%;
+    height: 13rem;
+    opacity: 0.8;
+  }
+  75% {
+    width: 70%;
+    height: 13rem;
+    opacity: 0.9;
+  }
+  88% {
+    width: 80%;
+    height: 13rem;
+    opacity: 1;
+  }
+  100% {
+    width: 90%;
+    height: 13rem;
+    opacity: 1;
+  }
+}
+
+.imagenPublicidadSecundaria {
+  width: 32%;
+  height: 8rem;
+  -webkit-animation-name: animatio2;
+          animation-name: animatio2;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
+}
+
+@-webkit-keyframes animatio2 {
+  0% {
+    width: 5%;
+    height: 8rem;
+    opacity: 0.4;
+  }
+  25% {
+    width: 10%;
+    height: 8rem;
+    opacity: 0.5;
+  }
+  37% {
+    width: 12%;
+    height: 8rem;
+    opacity: 0.6;
+  }
+  50% {
+    width: 15%;
+    height: 8rem;
+    opacity: 0.7;
+  }
+  63% {
+    width: 20%;
+    height: 8rem;
+    opacity: 0.8;
+  }
+  75% {
+    width: 27%;
+    height: 8rem;
+    opacity: 0.9;
+  }
+  88% {
+    width: 30%;
+    height: 8rem;
+    opacity: 1;
+  }
+  100% {
+    width: 32%;
+    height: 8rem;
+    opacity: 1;
+  }
+}
+
+@keyframes animatio2 {
+  0% {
+    width: 5%;
+    height: 8rem;
+    opacity: 0.4;
+  }
+  25% {
+    width: 10%;
+    height: 8rem;
+    opacity: 0.5;
+  }
+  37% {
+    width: 12%;
+    height: 8rem;
+    opacity: 0.6;
+  }
+  50% {
+    width: 15%;
+    height: 8rem;
+    opacity: 0.7;
+  }
+  63% {
+    width: 20%;
+    height: 8rem;
+    opacity: 0.8;
+  }
+  75% {
+    width: 27%;
+    height: 8rem;
+    opacity: 0.9;
+  }
+  88% {
+    width: 30%;
+    height: 8rem;
+    opacity: 1;
+  }
+  100% {
+    width: 32%;
+    height: 8rem;
+    opacity: 1;
+  }
+}
+
+.logoPrincipal {
+  width: 30%;
+}
+
+.logoFooter {
+  width: 30%;
+}
+
+.videoPrincipal {
+  width: 50%;
+}
+
+.videoCentral {
+  width: 90%;
+}
+
+.audio {
+  width: 10%;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.fotoUltimasNoticias {
+  width: 45%;
+  height: 70%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  opacity: 0.6;
+  border: 1px double goldenrod;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.fotoUltimasNoticias:hover {
+  opacity: 1;
+  border: 1px solid yellow;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  border-radius: 10px;
+}
+
+.videoSecundario {
+  width: 15%;
+  height: 10rem;
+  opacity: 0.5;
+  border: 1px double goldenrod;
+}
+
+.videoSecundario:hover {
+  opacity: 1;
+  border: 1px solid yellow;
+}
+
+.data ul {
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  color: #053b69;
+  font-size: 16px;
+  margin: 5px;
+  padding: 2px;
+}
+
+.data ul li:hover {
+  background-color: beige;
+  color: black;
+}
+
+.formulario {
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+.subir a {
+  text-align: left;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 16px;
+  margin: 5px;
+  padding: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid {
+    background-image: url(./Fotos_y_videos/background9.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 99%;
+    margin: 10px auto;
+    padding: 0.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.3fr 0.5fr 1fr 0.2fr 0.6fr 0.2fr 0.3fr;
+        grid-template-rows: 0.3fr 0.5fr 1fr 0.2fr 0.6fr 0.2fr 0.3fr;
+        grid-template-areas: "header" "ultimasNoticias" "noticiasDeLaSemana" "publicidadPrincipal" "noticiasVarias" "publicidadSecundaria" "footer";
+  }
+  .quienesSomos {
+    background-color: grey;
+    background-image: url(./Fotos_y_videos/background8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 99%;
+    margin: 10px auto;
+    padding: 0.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.2fr 2fr  0.2fr;
+        grid-template-rows: 0.2fr 2fr  0.2fr;
+    gap: 5px;
+        grid-template-areas: "header" "nosotros" "footer";
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .fuerzasVivas {
+    background-color: grey;
+    background-image: url(./Fotos_y_videos/background8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 99%;
+    margin: 10px auto;
+    padding: 0.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.2fr 2fr  0.2fr;
+        grid-template-rows: 0.2fr 2fr  0.2fr;
+    gap: 5px;
+        grid-template-areas: "header" "instituciones" "footer";
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .noticiasPoliciales {
+    background-color: grey;
+    background-image: url(./Fotos_y_videos/background8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 99%;
+    margin: 10px auto;
+    padding: 0.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.2fr 2fr  0.2fr;
+        grid-template-rows: 0.2fr 2fr  0.2fr;
+    gap: 5px;
+        grid-template-areas: "header" "policiales" "footer";
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .noticiasNecrologicas {
+    background-color: grey;
+    background-image: url(./Fotos_y_videos/background8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 99%;
+    margin: 10px auto;
+    padding: 0.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.2fr 2fr  0.2fr;
+        grid-template-rows: 0.2fr 2fr  0.2fr;
+    gap: 5px;
+        grid-template-areas: "header" "necrologicas" "footer";
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .noticiasMutual {
+    background-color: grey;
+    background-image: url(./Fotos_y_videos/background8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 99%;
+    margin: 10px auto;
+    padding: 0.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.2fr 2fr  0.2fr;
+        grid-template-rows: 0.2fr 2fr  0.2fr;
+    gap: 5px;
+        grid-template-areas: "header" "mutual" "footer";
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .vecinoMirate {
+    background-color: grey;
+    background-image: url(./Fotos_y_videos/background8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 99%;
+    margin: 10px auto;
+    padding: 0.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.2fr 2fr  0.2fr;
+        grid-template-rows: 0.2fr 2fr  0.2fr;
+    gap: 5px;
+        grid-template-areas: "header" "mirate" "footer";
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .noticiasCooperativa {
+    background-color: grey;
+    background-image: url(./Fotos_y_videos/background8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 99%;
+    margin: 10px auto;
+    padding: 0.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.2fr 2fr  0.2fr;
+        grid-template-rows: 0.2fr 2fr  0.2fr;
+    gap: 5px;
+        grid-template-areas: "header" "cooperativa" "footer";
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .loguin {
+    background-color: grey;
+    background-image: url(./Fotos_y_videos/background8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 99%;
+    margin: 10px auto;
+    padding: 0.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.2fr 2fr  0.2fr;
+        grid-template-rows: 0.2fr 2fr  0.2fr;
+    gap: 5px;
+        grid-template-areas: "header" "loguearse" "footer";
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .iniciarSesion {
+    background-color: grey;
+    background-image: url(./Fotos_y_videos/background8.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 99%;
+    margin: 10px auto;
+    padding: 0.5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 0.2fr 2fr  0.2fr;
+        grid-template-rows: 0.2fr 2fr  0.2fr;
+    gap: 5px;
+        grid-template-areas: "header" "sesion" "footer";
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .titulo_principal {
+    font-size: 3rem;
+  }
+  .titulo_secundario {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .fotoUltimasNoticias {
+    width: 20rem;
+  }
+  .fotoNoticiaDeLaSemana {
+    width: 18rem;
+  }
+  .videoCentral {
+    width: 20rem;
+  }
+  .videoSecundario {
+    width: 10rem;
+  }
+  .logoPrincipal {
+    width: 40%;
+  }
+  .menu ul {
+    list-style: none;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    z-index: 1;
+  }
+  .menu li a {
+    color: black;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .menu li a:hover {
+    background-color: black;
+    color: white;
+  }
+  .buscador {
+    position: fixed;
+    top: 65px;
+    right: 25px;
+    z-index: 2;
+    background-color: white;
+    border-radius: 40%;
+    list-style: none;
+    text-decoration: none;
+  }
+  .buscador li {
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #053b69;
+    font-size: 10px;
+    margin: 5px;
+    padding: 2px;
+  }
+}
+/*# sourceMappingURL=estilo.css.map */

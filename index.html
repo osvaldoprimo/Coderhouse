@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./CSS/estilo.css">
     <link href=<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,57 +19,53 @@
 </head>
 <body>
     <!--Comienza la página-->
-    <div class="grid" class="container">
-        <nav class="header">
-            <nav class="navbar navbar-expand-lg col-12 navbar-dark bg-dark mb-5">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
-                      <img src="./Fotos_y_videos/Temple_Informa_Logo_sin_fondo_recortado.png" alt="" width="260">
-                  </a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./que_es_temple_informa.html">¿Qué es Temple Informa?</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./noticias_institucionales.html">Noticias Institucionales</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./noticias_de_la_mutual.html">Noticias de Coope y Mutual</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./policiales.html">Policiales</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./necrologicas.html">Necrológicas</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./mirate.html">Mirate</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./inicio_de_sesion.html">Inicio de sesión</a>
-                      </li>
-                      
-                    </ul>
-                    <form class="d-flex">
-                      <input class="form-control me-2" type="search" placeholder="¿Qué noticia buscás?" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                  </div>
-                </div>
-              </nav>
-            
-        </nav>
-        <div class="row">
-            <section class="ultimasNoticias m-5 col-xs-12 col-md-12 col-xl-8 border p-3 bg-secondary mx-2 my-2 px-2 py-2">
-                <h1 class="titulo_principal row animate__animated animate__fadeInDown me-5" >Últimas Noticias</h1>
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div id="arriba" class="grid" class="container-fluid">
+      <nav class="navbar navbar-expand-lg col-12 navbar-dark bg-dark m-1 p-1">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./Fotos_y_videos/Temple_Informa_Logo_sin_fondo_recortado.png" alt="" width="260">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./log_in.html">Inicio de sesión</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Secciones
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./que_es_temple_informa.html">¿Qué es Temple Informa?</a></li>
+                  <li><a class="dropdown-item" href="./noticias_institucionales.html">Noticias Institucionales</a></li>
+                  <li><a class="dropdown-item" href="./noticias_de_la_mutual.html">Noticias de Coope y Mutual</a></li>
+                  <li><a class="dropdown-item" href="./policiales.html">Policiales</a></li>
+                  <li><a class="dropdown-item" href="./necrologicas.html">Necrológicas</a></li>
+                  <li><a class="dropdown-item" href="./mirate.html">Mirate</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="./index.html">Home</a></li>
+                </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Contacto">Contacto</a>
+                </li>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="¿Qué noticia buscás?" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="row">
+            <section class="ultimasNoticias container-fluid col-sm-12 col-md-12 col-xl-8 border p-3 bg-secondary ms-4 me-1 mt-1 mb-2 px-2 py-2">
+                <h1 class="titulo_principal row animate__animated animate__fadeInDown ms-5" >Últimas Noticias</h1>
+                <div id="carouselExampleCaptions" class="carousel slide w-75 mx-auto" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -77,21 +74,21 @@
                     <div class="carousel-inner">
                       <div class="carousel-item active">
                         <img src="./Fotos_y_videos/asamblea_2019_cooperativa_escolar.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-none d-md-block bg-text">
                           <h5>First slide label</h5>
                           <p>Some representative placeholder content for the first slide.</p>
                         </div>
                       </div>
                       <div class="carousel-item">
                         <img src="./Fotos_y_videos/asamblea_2019_cooperativa_escolar.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-none d-md-block bg-text">
                           <h5>Second slide label</h5>
                           <p>Some representative placeholder content for the second slide.</p>
                         </div>
                       </div>
                       <div class="carousel-item">
                         <img src="./Fotos_y_videos/asamblea_2019_cooperativa_escolar.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
+                        <div class="carousel-caption d-none d-md-block bg-text">
                           <h5>Third slide label</h5>
                           <p>Some representative placeholder content for the third slide.</p>
                         </div>
@@ -107,18 +104,28 @@
                     </button>
                   </div>
             </section>
-                <div class="noticiasDeLaSemana col-xs-12 col-md-12 col-xl-3 border bg-secondary mx-2 my-2 px-2 py-2">
-                    <h2 class="titulo_secundario animate__animated animate__fadeInRight">Noticias de la semana<h2></h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, magni alias. Dolorum quos sequi, inventore tenetur sunt laudantium doloremque sint?</p>
-                    <img class="fotoNoticiaDeLaSemana wow animate__animated animate__backInLeft" src="./Fotos_y_videos/asambea.jpg" alt="Foto de asamblea reunida">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, magni alias. Dolorum quos sequi, inventore tenetur sunt laudantium doloremque sint?</p>
-                    <img class="fotoNoticiaDeLaSemana wow animate__animated animate__backInLeft" src="./Fotos_y_videos/vlcsnap-2021-03-03-09h13m50s465.png" alt="Foto de nota a Patricia Astrada">
-                </div>
-        </div>
-        <sectio class="publicidadPrincipal"><!--Publicidad principal de la página-->
+            <div class="noticiasDeLaSemana col-xs-12 col-md-12 col-xl-3 border bg-secondary ms-4 me-1 mt-1 mb-2 px-2 py-2 overflow-auto">
+                  <h2 class="titulo_secundario animate__animated animate__fadeInRight">Noticias de la semana<h2></h2>
+                  <div class="card bg-dark text-white m-3 img-fluid">
+                    <img src="./Fotos_y_videos/asambea.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title bg-text">Card title</h5>
+                        <p class="card-text bg-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                  <div class="card bg-dark text-white m-3 img-fluid">
+                    <img src="./Fotos_y_videos/asambea.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title bg-text">Card title</h5>
+                        <p class="card-text bg-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+            </div>
+      </div>
+      <sectio class="publicidadPrincipal img-fluid"><!--Publicidad principal de la página-->
             <img class="imagenPublicidadPrincipal" src="./Fotos_y_videos/Publicidad1.jpg" alt="imagen publicitaria">
-        </sectio>
-        <sectio class="noticiasVarias"><!--Noticias varias-->
+      </sectio>
+      <sectio class="noticiasVarias"><!--Noticias varias-->
             <video class="videoSecundario uno" src="./Fotos_y_videos/Templetv_Notas_Participarán_en_concurso_SIP.mp4" controls>Video de ofertas de la Mutual</video>
             <iframe class="videoSecundario" src="https://www.youtube.com/embed/dJXQqIVXwbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <audio class="audio" src="./Fotos_y_videos/audio_la_curva.mp3" controls>Audio</audio>
@@ -128,40 +135,70 @@
             <iframe class="videoSecundario" src="https://www.youtube.com/embed/dJXQqIVXwbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <video class="videoSecundario" src="./Fotos_y_videos/Templetv_Notas_Participarán_en_concurso_SIP.mp4" controls>Video de ofertas de la Mutual</video>
             <iframe class="videoSecundario" src="https://www.youtube.com/embed/dJXQqIVXwbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </sectio>
-        <sectio class="publicidadSecundaria"><!--Publicidades varias-->
+      </sectio>
+      <sectio class="publicidadSecundaria img-fluid"><!--Publicidades varias-->
             <img class="imagenPublicidadSecundaria" src="./Fotos_y_videos/Publicidad1.jpg">
             <img class="imagenPublicidadSecundaria" src="./Fotos_y_videos/Publicidad1.jpg">
             <img class="imagenPublicidadSecundaria" src="./Fotos_y_videos/Publicidad1.jpg">
-        </sectio>
-        <footer class="footer">
-            <img src="./Fotos_y_videos/Logo_canal_sin_fondo.png" class="logoFooter" alt="Logo del canal Templetv">
-        <section class="data">
-            <ul>
-                <li><a href="https://www.instagram.com/canaldostempletvcba/?hl=es-la">Instagram</a></li>
-                <li><a href="https://www.facebook.com/canaldos.templetv/">Facebook</a></li>
-            <ul>
-            <ul>
-                <li>Contacto 3574 402493</li>
-                <li>Mail canaldos@gmailo.com</li>
+      </sectio>
+      <footer class="d-flex flex-column align-items-center justify-content-end py-5 container-fluid bg-dark text-light col-12 navbar-dark p-3 bg-dark ms-1 me-1 mb-2">
+        <img src="./Fotos_y_videos/Logo_canal_sin_fondo.png" alt="" width="260" >
+        <div class="row">
+          <div class="col-sm-12 col-xl-4">
+            <h5>Nuestra página</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2"><a href="log_in.html" class="nav-link p-0 text-muted">Inicio de sesión</a></li>
             </ul>
-            <ul>
-                <li>Canaldos Templetv</li>
-                <li>Producido por Moebius</li>
+          </div>
+          <div class="col-sm-12 col-xl-4">
+            <h5>Secciones</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="./Que_es_temple_informa.html" class="nav-link p-0 text-muted">¿Qué es Temple Informa?</a></li>
+              <li class="nav-item mb-2"><a href="./institucionales.html" class="nav-link p-0 text-muted">Noticias Institucionales</a></li>
+              <li class="nav-item mb-2"><a href="./coope_y_mutual.html" class="nav-link p-0 text-muted">Noticias de la Coope y Mutual</a></li>
             </ul>
-        <section>
-        <br>
-        <ul class="subir">
-            <li><a href="#arriba">Ir arriba</a></li>
-        </ul>
-        </footer>
-    </div>
+          </div>
+          <div class="col-sm-12 col-xl-4">
+            <h5>Secciones</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="./policiales.html" class="nav-link p-0 text-muted">Policiales</a></li>
+              <li class="nav-item mb-2"><a href="./necrologicas.html" class="nav-link p-0 text-muted">Necrológicas</a></li>
+              <li class="nav-item mb-2"><a href="./mirate.html" class="nav-link p-0 text-muted">Mirate</a></li>
+            </ul>
+          </div>
+          <div class="col-12 offset-1">
+            <form>
+              <h5>Suscríbase a nuestro newsletter</h5>
+              <div class="d-flex w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Dirección de Email</label>
+                <input id="newsletter1" type="text" class="form-control" placeholder="Dirección de Email">
+                <button class="btn btn-primary" type="button">Suscribirse</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="d-flex justify-content-between py-4 my-4 border-top">
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+            <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+          </ul>
+        </div>
+        <div id="Contacto" class="contacto">
+          <a href="https://www.facebook.com/canaldos.templetv/"><i class="bi bi-facebook fs-1"></i></a>
+          <a href="https://www.instagram.com/canaldostempletvcba/?hl=es-la"><i class="bi bi-instagram fs-1"></i></a>
+          <a href="https://wa.me/3574402493"><i class="bi bi-whatsapp fs-1"></i></a>
+        </div>
+        <p>&copy; 2022 Canaldos Templetv, Santiago Temple. Producido por MoeBius</p>
+      </footer>
+  </div>
     <script src="js/wow.min.js"></script>
         <script>
         new WOW().init();
     </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+   
 
 </body>
 </html>
