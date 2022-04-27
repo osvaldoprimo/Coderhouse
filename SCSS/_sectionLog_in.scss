@@ -1,0 +1,30 @@
+.loguin{
+    background-image: url("/Fotos_y_videos/background8.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 99%;
+    margin: 10px auto;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr  0.5fr;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+    grid-template-areas:
+    "header"
+    "loguearse"
+    "footer";
+    align-content: space-around;
+}
+.loguearse{
+    grid-area: loguearse;
+    padding: 1rem;
+    margin: 0.5rem;
+    text-align:justify;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    align-items:center;
+    align-content:center;
+}

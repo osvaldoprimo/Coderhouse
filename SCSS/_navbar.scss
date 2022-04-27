@@ -1,0 +1,37 @@
+.navbar{
+    .logoPrincipal {
+        width: 30%;
+        transition: all 0.5s;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    .data {
+        ul {
+            font-family: 'Open Sans', sans-serif;
+            color: rgb(5, 59, 105);
+            font-size: 16px;
+            margin: 5px;
+            padding: 2px;
+            li {
+                &:hover {
+                    background-color: grey;
+                    color: black;
+                    border-radius: 10%;
+                }
+            }
+        }
+    }
+    .d-flex{
+        font-family: 'Open Sans', sans-serif;
+    }
+    .btn-outline-success {
+        color: wheat;
+        border-color: wheat;
+        &:hover {
+            background-color: grey;
+            border-color: white;
+        }
+    }
+
+}
