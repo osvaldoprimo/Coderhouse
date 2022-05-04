@@ -14,18 +14,14 @@
 @import "sectionLog_in";
 @import "sectionPoliciales";
 
-$fondoescritorio:"/fotos_y_videos/background8.png";
-$fondocelular:#5a5a5a;
-$fondoseccion:#353333;
-$titulo: #f5f5dc 'Open Sans', sans-serif;
-$parrafo:  #ffffff 'Poppins', sans-serif;
+
 
 .grid{
     background-image: $fondoescritorio;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.header, .ultimasNoticias, .noticiasDeLaSemana, .noticiasVarias, .publicidadPrincipal, .publicidadSecundaria, .footer{
+.header, .noticiasVarias, .publicidadPrincipal, .publicidadSecundaria, .footer{
     border-radius: 10px;
 }
 

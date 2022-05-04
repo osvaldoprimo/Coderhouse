@@ -30,9 +30,21 @@
     background-color: grey;
     border-color: white; }
 
+header {
+  background-color: #5a5a5a; }
+  header h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-family: "Open Sans", sans-serif; }
+
+main {
+  background-color: black; }
+
 .row .ultimasNoticias {
   background-color: #353333;
-  border: black double 5px;
+  border: 5px;
+  border-color: yellow;
+  border-radius: 10px;
   text-align: center;
   color: white;
   font-family: 'Open Sans', sans-serif;
@@ -67,7 +79,9 @@
 .noticiasDeLaSemana {
   grid-area: noticiasDeLaSemana;
   background-color: #353333;
-  border: black double 5px;
+  border: 5px;
+  border-color: yellow;
+  border-radius: 10px;
   text-align: center;
   color: white;
   font-family: 'Open Sans', sans-serif;
@@ -89,7 +103,9 @@
   padding: 1rem;
   margin: 0.5rem;
   background-color: #353333;
-  border: black double 5px;
+  border: 5px;
+  border-color: yellow;
+  border-radius: 10px;
   text-align: center;
   color: white;
   font-family: 'Open Sans', sans-serif;
@@ -116,7 +132,10 @@
   grid-area: publicidadPrincipal;
   padding: 1rem;
   margin: 0.5rem;
-  background-color: #353333;
+  background-color: #5a5a5a;
+  border: 2px;
+  border-color: yellow;
+  border-radius: 10px;
   border: black double 5px;
   border-top: 5px black double;
   border-bottom: 5px black double;
@@ -138,7 +157,10 @@
   grid-area: publicidadPrincipal;
   padding: 1rem;
   margin: 0.5rem;
-  background-color: #353333;
+  background-color: #5a5a5a;
+  border: 2px;
+  border-color: yellow;
+  border-radius: 10px;
   border: black double 5px;
   border-top: 5px black double;
   border-bottom: 5px black double;
@@ -509,7 +531,7 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
-.header, .ultimasNoticias, .noticiasDeLaSemana, .noticiasVarias, .publicidadPrincipal, .publicidadSecundaria, .footer {
+.header, .noticiasVarias, .publicidadPrincipal, .publicidadSecundaria, .footer {
   border-radius: 10px; }
 
 .quienesSomos {

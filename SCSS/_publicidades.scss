@@ -1,8 +1,23 @@
+$bgbody: black;
+$bgcolor2:#5a5a5a;
+$bgcolor1:#353333;
+$titulo-color: #f5f5dc;
+$titulo-typo: 'Open Sans', sans-serif;
+$parrafo-color:  #ffffff;
+$parrafo-typo: 'Poppins', sans-serif;
+
+@mixin section($bgcolorsection) {
+    background-color: $bgcolorsection;
+    border: 2px;
+    border-color: yellow;
+    border-radius: 10px;
+}
+
 .publicidadPrincipal {
     grid-area: publicidadPrincipal;
     padding: 1rem;
     margin: 0.5rem;
-    background-color: rgb(53, 51, 51);
+    @include section ($bgcolor2);
     border: black double 5px;
     border-top: 5px black double;
     border-bottom: 5px black double;
@@ -25,7 +40,7 @@
     grid-area: publicidadPrincipal;
     padding: 1rem;
     margin: 0.5rem;
-    background-color: rgb(53, 51, 51);
+    @include section ($bgcolor2);
     border: black double 5px;
     border-top: 5px black double;
     border-bottom: 5px black double;
