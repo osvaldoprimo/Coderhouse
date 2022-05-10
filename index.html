@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Temple Informa ofrece noticias locales de Santiago Temple, provincia de Córdoba, Argentina">
-    <meta name="keywords" content="SANTIAGO TEMPLE, NOTICIAS, CÓRDOBA, INFORMACIÓN, COOPERATIVA, MUTUAL, CANAL LOCAL, NOTICIAS LOCALES">
-    <link rel= "shortcut icon" href="./Fotos_y_videos/favicon.ico">
+    <meta name="keywords" content="SANTIAGO TEMPLE, NOTICIAS, CORDOBA, INFORMACION, COOPERATIVA, MUTUAL, CANAL LOCAL, NOTICIAS LOCALES">
+    <link rel= "shortcut icon" href="./media/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/estilo.css">
     <title>Temple Informa Noticias de Santiago Temple</title>
 </head>
@@ -23,10 +26,10 @@
     <!--Comienza la página-->
   <header>
     <div id="arriba" class="grid" class="container-fluid">
-      <nav class="navbar navbar-expand-lg col-12 navbar-dark bg-dark m-1 p-1">
+      <nav id="menu" class="navbar menu navbar-expand-lg d-flex flex-column align-items-center justify-content-end fixed-top py-5 container-fluid text-light col-11 navbar-dark p-3 bg-dark1 d-block mx-auto mb-2">
         <div class="container-fluid">
           <a class="navbar-brand logoPrincipal" href="#">
-            <img src="./Fotos_y_videos/Temple_Informa_Logo_sin_fondo_recortado.png" alt="" width="260">
+            <img src="./media/logotempleinforma.png" alt="" width="170">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -44,9 +47,9 @@
                   Secciones
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./que_es_temple_informa.html">¿Qué es Temple Informa?</a></li>
-                  <li><a class="dropdown-item" href="./noticias_institucionales.html">Noticias Institucionales</a></li>
-                  <li><a class="dropdown-item" href="./noticias_de_la_mutual.html">Noticias de Coope y Mutual</a></li>
+                  <li><a class="dropdown-item" href="./temple_informa.html">¿Qué es Temple Informa?</a></li>
+                  <li><a class="dropdown-item" href="./institucionales.html">Noticias Institucionales</a></li>
+                  <li><a class="dropdown-item" href="./mutual_cooperativa.html">Noticias de Coope y Mutual</a></li>
                   <li><a class="dropdown-item" href="./policiales.html">Policiales</a></li>
                   <li><a class="dropdown-item" href="./necrologicas.html">Necrológicas</a></li>
                   <li><a class="dropdown-item" href="./mirate.html">Mirate</a></li>
@@ -65,38 +68,41 @@
         </div>
       </nav>
     </div>
-    <h1 class="titulo_de_pagina">Si pasó en Santiago Temple, está en Temple Informa</h1>
+    <h1 class="titulo_de_pagina">Si pasó<span> en Santiago</span> <span></span> <span>Temple</span><span>...</span></h1>
   </header>
   <main>
       <div class="row">
-            <section class="ultimasNoticias fotoUltimasNoticias container-fluid col-sm-12 col-md-12 col-xl-8  p-3  ms-4 me-1 mt-1 mb-2 px-2 py-2">
-                <h2 class="titulo_principal row animate__animated animate__fadeInDown ms-5" >Últimas Noticias</h2>
-                <div id="carouselExampleCaptions" class="carousel slide w-75 mx-auto" data-bs-ride="carousel">
+            <section class="ultimasNoticias fotoUltimasNoticias container-fluid col-sm-12 col-md-12 col-xl-8  text-center p-3  ml-3 mt-1 mb-2 px-2 py-2 bg-dark1">
+                <h2 class="titulo_principal" >Últimas Noticias</h2>
+                <div id="carouselExampleCaptions" class="carousel slide w-5 mx-auto" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="./Fotos_y_videos/asamblea_2019_cooperativa_escolar.jpg" class="d-block w-100" alt="Estudiantes de la Cooperativa Escolar">
+                      <div  class="carousel-item active">
+                        <img src="./media/coope.jpg" class="d-block w-100" alt="Estudiantes de la Cooperativa Escolar">
                         <div class="carousel-caption d-none d-md-block bg-text">
-                          <h5>First slide label</h5>
-                          <p>Some representative placeholder content for the first slide.</p>
+                          <h5> COOPERATIVA Y MUTUAL TUVIERON SU ASAMBLEA.</h5>
+                          <p>El jueves 28 de abril se realizaron las Asambleas de la Cooperativa y la Mutual.
+                            Temple Informa estuvo presente, y hablamos con el Presidente Gustavo García, el Secretario Juan Carlos Garelli y con el Contador (Auditor Externo) Daniel Bertone. Todos resaltaron la consolidación paulatina de ambas instituciones.</p>
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="./Fotos_y_videos/asamblea_2019_cooperativa_escolar.jpg" class="d-block w-100" alt="Estudiantes reunidos">
+                        <img src="./media/club.jpg" class="d-block w-100" alt="Estudiantes reunidos">
                         <div class="carousel-caption d-none d-md-block bg-text">
-                          <h5>Second slide label</h5>
-                          <p>Some representative placeholder content for the second slide.</p>
+                          <h5>ASÍ FUE EL FESTEJO DE LOS 105 AÑOS DEL CLUB SARMIENTO.</h5>
+                          <p>Nuestro Club Santiago Temple Sarmiento festejó el pasado 23 de abril sus 105 años, con un gran encuentro de socios.
+                            Temple Informa estuvo presente y dialogó al respecto con uno de los artistas de la noche, Daniel Peralta, con los expresidentes Juan Carlos Bustos y Luis Bordicio, y con el actual Presidente Joel Jaime.</p>
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <img src="./Fotos_y_videos/asamblea_2019_cooperativa_escolar.jpg" class="d-block w-100" alt="Estudiantes en asamblea">
+                        <img src="./media/premio.jpg" class="d-block w-100" alt="Estudiantes en asamblea">
                         <div class="carousel-caption d-none d-md-block bg-text">
-                          <h5>Third slide label</h5>
-                          <p>Some representative placeholder content for the third slide.</p>
+                          <h5>NUESTRA VECINA MÓNICA ANDRAWOS RECIBIÓ UN IMPORTANTE PREMIO DE CLUB SAN JORGE.</h5>
+                          <p>Se trata de un premio en efectivo del sorteo del prestigioso Club San Jorge. 
+                            Para participar en un sorteo similar (por premios en efectivo, motos o autos), podés comunicarte al número de Stella (vendedora): 3574 402940</p>
                         </div>
                       </div>
                     </div>
@@ -110,78 +116,175 @@
                     </button>
                   </div>
             </section>
-            <section class="noticiasDeLaSemana col-xs-12 col-md-12 col-xl-3  ms-4 me-1 mt-1 mb-2 px-2 py-2 overflow-auto">
+            <section class="noticiasDeLaSemana col-xs-12 col-md-12 col-xl-3  d-block mx-auto mt-1 mb-2 px-2 py-2 bg-dark1 overflow-auto">
                   <h2 class="titulo_secundario animate__animated animate__fadeInRight">Noticias de la semana</h2>
                   <div class="card fotoNoticiaDeLaSemana bg-dark text-white m-3 img-fluid">
-                    <img src="./Fotos_y_videos/asambea.jpg" class="card-img" alt="Asamblea Escolar"> 
-                  </div>
-                  <h5 class="card-title bg-text">Card title</h5>
-                  <p class="card-text bg-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <img src="./media/estafa.jpg" class="card-img" alt="Asamblea Escolar">
+                      <div class="position-absolute fixed-bottom">
+                        <h5 class="card-title bg-text">CONTINÚAN LOS INTENTOS DE ESTAFA TELEFÓNICA EN SANTIAGO TEMPLE.</h5>
+                        <p class="card-text bg-text">Con mayor intensidad en determinados días (como el de hoy, martes 3), siguen los intentos de estafa en nuestro pueblo. ¡A estar atentos!</p> 
+                    </div>
+                    </div>
                   <div class="card fotoNoticiaDeLaSemana bg-dark text-white m-3 img-fluid">
-                    <img src="./Fotos_y_videos/asambea.jpg" class="card-img" alt="Asamblea de la Escuela Coronel Pringles">
-                  </div>
-                  <h5 class="card-title bg-text">Card title</h5>
-                  <p class="card-text bg-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <img src="./media/accidente.jpg" class="card-img" alt="Asamblea de la Escuela Coronel Pringles">
+                      <div class="position-absolute fixed-bottom">
+                        <h5 class="card-title bg-text">ACCIDENTE SOBRE LA RUTA 19</h5>
+                        <p class="card-text bg-text">Sucedió minutos antes de las 16 horas a 3.5 km de Santiago Temple (acceso oeste, a metros de la Estación de Servicio Puma), entre un vehículo Fiat Palio azul y un camión. </p>
+                    </div>
+                    </div>
             </section>
       </div>
       <section class="publicidadPrincipal img-fluid"><!--Publicidad principal de la página-->
-            <img class="imagenPublicidadPrincipal" src="./Fotos_y_videos/Publicidad1.jpg" alt="imagen publicitaria">
+            <img class="imagenPublicidadPrincipal" src="./media/bannercooperativa.png" alt="imagen publicitaria">
       </section>
-      <section class="noticiasVarias"><!--Noticias varias-->
-            <video class="videoSecundario uno" src="./Fotos_y_videos/Templetv_Notas_Participarán_en_concurso_SIP.mp4" controls>Video de ofertas de la Mutual</video>
-            <iframe class="videoSecundario" src="https://www.youtube.com/embed/dJXQqIVXwbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <audio class="audio" src="./Fotos_y_videos/audio_la_curva.mp3" controls>Audio</audio>
-            <video class="videoSecundario" src="./Fotos_y_videos/Templetv_Notas_Participarán_en_concurso_SIP.mp4" controls>Video de ofertas de la Mutual</video>
-            <iframe class="videoSecundario" src="https://www.youtube.com/embed/dJXQqIVXwbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-            <video class="videoSecundario" src="./Fotos_y_videos/Templetv_Notas_Participarán_en_concurso_SIP.mp4" controls>Video de ofertas de la Mutual</video>
-            <iframe class="videoSecundario" src="https://www.youtube.com/embed/dJXQqIVXwbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <video class="videoSecundario" src="./Fotos_y_videos/Templetv_Notas_Participarán_en_concurso_SIP.mp4" controls>Video de ofertas de la Mutual</video>
-            <iframe class="videoSecundario" src="https://www.youtube.com/embed/dJXQqIVXwbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </section>
+      <section class="section bg-dark2 d-block mx-auto col-11" id="notastv">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="titulares">
+                        <tit>Esto sucedió en Santiago Temple</tit>
+                        <h3>Notas de Temple Informa</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="video-responsive">
+                            <iframe width="400" height="250" src="https://www.youtube.com/embed/eIIHMEvHcWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="bajada">
+                            <h4>Comenzó el dictado de clases de la capacitación de la Mutual</h4>
+                            <texto>Comenzó el dictado de clases de la capacitación para "Acompañante domiciliario de adultos mayores", auspiciada por la Mutual de Santiago Temple y en la que participan 18 estudiantes de la localidad.</texto>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="video-responsive">
+                            <iframe width="400" height="250" src="https://www.youtube.com/embed/gEvW5bzgJA8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><i class="fa fa-star"></i>
+                        </div>
+                        <div class="bajada">
+                            <h4>Entrenamiento del fútbol infantil de Sarmiento</h4>
+                            <texto>Temple Informa visitó el entrenamiento de las inferiores de Sarmiento de Santiago Temple.
+                                Hablamos con el entrenador Joaquín Cristolfo y con el presidente de la entidad, Joel Jaime</texto>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="video-responsive">
+                            <iframe class="youtube" width="400" height="250" src="https://www.youtube.com/embed/Qu7sfEuRNrI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="bajada">
+                            <h4>Los poemas de Ana</h4>
+                            <texto>Emotiva nota en donde Ana Quevedo nos relata sus Poesías. Ejemplo mismo de resiliencia</texto>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="video-responsive">
+                            <iframe class="youtube" width="400" height="250" src="https://www.youtube.com/embed/T8Yy0g0Yd8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><i class="fa fa-eye"></i>
+                        </div>
+                        <div class="bajada">
+                            <h4>Santiago Temple: Mujeres en gestión municipal</h5>
+                            <texto>Entrevista al Intendente Ferace y a las mujeres responsables de las distintas áreas municipales</texto>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="video-responsive">
+                            <iframe class="youtube" width="400" height="250" src="https://www.youtube.com/embed/GqVDf_AN0-M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><i class="fa fa-star"></i>
+                        </div>
+                        <div class="bajada">
+                            <h4>Acto del 25 de mayo 2021</h4>
+                            <texto>Acto organizado por la Escuela Coronel Pringles. Edición  y producción a cargo del Canaldos Templetv</texto>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="video-responsive">
+                            <iframe class="youtube" width="400" height="250" src="https://www.youtube.com/embed/i-nkV_4mw5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="bajada">
+                            <h4>¿Se pueden tratar las secuelas del Covid-19?</h4>
+                            <texto>Entrevista al fisioterapeuta Pedro F. Rius</texto>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="video-responsive">
+                            <iframe class="youtube" width="400" height="250" src="https://www.youtube.com/embed/DgEbPSXTM0M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><i class="fa fa-eye"></i>
+                        </div>
+                        <div class="bajada">
+                            <h4>Proveeduría de la Mutual Sucursal Calchín</h4>
+                            <texto>Este es el video institucional que se proyectó durante la inauguración de la Proveeduría de la Mutual, sucursal Calchín</texto>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="video-responsive">
+                            <iframe class="youtube" width="400" height="250" src="https://www.youtube.com/embed/NjPSekTUltk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><i class="fa fa-star"></i>
+                        </div>
+                        <div class="bajada">
+                            <h4>Memorias Cooperativa y Mutual 2021</h4>
+                            <texto>¿Querés saber qué acciones realizaron la Cooperativa y la Mutual durante el 2021? No te pierdas el video de sus Memorias Descriptivas (presentes en el balance correspondiente)</texto>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="item">
+                        <div class="video-responsive">
+                            <iframe class="youtube" width="400" height="250" src="https://www.youtube.com/embed/d8PqA1d-bXU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><i class="fa fa-shopping-cart"></i>
+                        </div>
+                        <div class="bajada">
+                            <h4>INSCRIPCIÓN AL CURSO GRATUITO DE CUIDADOR DOMICILIARIO.</h5>
+                            <texto>Es una oportunidad imperdible. Curso con excelente salida laboral, con todos los costos cubiertos por la Mutual de Santiago Temple.
+                                Solo hay que inscribirse. Para ello, podés llegarte a las oficinas de la Mutual durante esta semana, o bien podés hacerlo online, haciendo clic aquí (hay tiempo hasta el 28 de febrero)</texto>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="pagination">
+                        <ul>
+                            <li class="active">
+                                <a href="#">1</a>
+                            </li>
+                            <li class="">
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#">></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
       <section class="publicidadSecundaria img-fluid"><!--Publicidades varias-->
-            <img class="imagenPublicidadSecundaria" src="./Fotos_y_videos/Publicidad1.jpg">
-            <img class="imagenPublicidadSecundaria" src="./Fotos_y_videos/Publicidad1.jpg">
-            <img class="imagenPublicidadSecundaria" src="./Fotos_y_videos/Publicidad1.jpg">
+            <img class="imagenPublicidadSecundaria" src="./media/bannerpuma.png">
+            <img class="imagenPublicidadSecundaria" src="./media/bannerdelfin.png">
+            <img class="imagenPublicidadSecundaria" src="./media/bannercooperativa.png">
       </section>
   </main>
-  <footer class="footer d-flex flex-column align-items-center justify-content-end py-5 container-fluid bg-dark text-light col-12 navbar-dark p-3 bg-dark ms-1 me-1 mb-2">
-        <img src="./Fotos_y_videos/Logo_canal_sin_fondo.png" alt="" width="260" >
-        <div class="row">
-          <div class="col-sm-12 col-xl-4">
-            <h5>Nuestra página</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="./index.html" class="nav-link p-0 text-muted">Home</a></li>
-              <li class="nav-item mb-2"><a href="log_in.html" class="nav-link p-0 text-muted">Inicio de sesión</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-12 col-xl-4">
-            <h5>Secciones</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="./Que_es_temple_informa.html" class="nav-link p-0 text-muted">¿Qué es Temple Informa?</a></li>
-              <li class="nav-item mb-2"><a href="./institucionales.html" class="nav-link p-0 text-muted">Noticias Institucionales</a></li>
-              <li class="nav-item mb-2"><a href="./coope_y_mutual.html" class="nav-link p-0 text-muted">Noticias de la Coope y Mutual</a></li>
-            </ul>
-          </div>
-          <div class="col-sm-12 col-xl-4">
-            <h5>Secciones</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2"><a href="./policiales.html" class="nav-link p-0 text-muted">Policiales</a></li>
-              <li class="nav-item mb-2"><a href="./necrologicas.html" class="nav-link p-0 text-muted">Necrológicas</a></li>
-              <li class="nav-item mb-2"><a href="./mirate.html" class="nav-link p-0 text-muted">Mirate</a></li>
-            </ul>
-          </div>
-          <div class="col-12 offset-1">
-            <form>
-              <h5>Suscríbase a nuestro newsletter</h5>
-              <div class="d-flex w-100 gap-2">
-                <label for="newsletter1" class="visually-hidden">Dirección de Email</label>
-                <input id="newsletter1" type="text" class="form-control" placeholder="Dirección de Email">
-                <button class="btn btn-primary" type="button">Suscribirse</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="d-flex justify-content-between py-4 my-4 border-top">
+  <footer class="footer d-flex flex-column text-center align-items-center justify-content-end py-5 container-fluid text-light col-11 navbar-dark p-3 bg-dark1 d-block mx-auto mb-1">
+        <img src="./media/isologotipo temple tv.png" alt="" width="200" >
+        <img src="./media/logotempleinforma.png" alt="" width="200">
+        <div class="d-flex justify-content-between">
           <ul class="list-unstyled d-flex">
             <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
             <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
@@ -192,11 +295,12 @@
           <a class="subir" href="#arriba">Ir arriba</a>
         </li>
         <div id="Contacto" class="contacto">
-          <a href="https://www.facebook.com/canaldos.templetv/"><i class="bi bi-facebook fs-1"></i></a>
-          <a href="https://www.instagram.com/canaldostempletvcba/?hl=es-la"><i class="bi bi-instagram fs-1"></i></a>
-          <a href="https://wa.me/3574402493"><i class="bi bi-whatsapp fs-1"></i></a>
+          <a href="https://www.facebook.com/canaldos.templetv/" target="_blank"><i class="bi bi-facebook fs-1"></i></a>
+          <a href="https://www.instagram.com/canaldostempletvcba/?hl=es-la" target="_blank"><i class="bi bi-instagram fs-1"></i></a>
+          <a href="https://wa.me/3574402493" target="_blank"><i class="bi bi-whatsapp fs-1"></i></a>
         </div>
-        <p>&copy; 2022 Canaldos Templetv, Santiago Temple. Producido por MoeBius</p>
+        <p>&copy; 2022 Canaldos Templetv, Santiago Temple.</p>
+        <p>&copy; Producido por MoeBius-Imágenes en movimiento </p>
   </footer>
     <script src="js/wow.min.js"></script>
         <script>

@@ -1,8 +1,11 @@
 @media only screen and (max-width: 600px) {
-    .grid{
-        background-color: dimgray;
-        background-repeat: no-repeat;
+    
+    body{
+        background-image: url("../media/portada2.jpg");
         background-size: cover;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-position: center center;
     }
     .quienesSomos{
         background-color: grey;
@@ -166,14 +169,12 @@
         "footer";
         align-content: space-around;
     }
-    .titulo_principal{
-        font-size: 3rem;
-    }
+      
     .titulo_secundario{
         font-size: 2rem;
     }
     p{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .fotoUltimasNoticias{
         width: 23rem;
@@ -187,7 +188,39 @@
     .videoSecundario{
         width: 10rem;
     }
-    .logoPrincipal{
-        width: 40%;
+    
+    .titulo_de_pagina{
+        font-size: 3rem;
+
+    }
+    .carousel-caption{
+        font-size: 1rem;
+    }
+    .card-title{
+        font-size: 1rem;
+    }
+    .tit{
+        font-size: 2rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+   
+    .titulo_principal{
+        text-align:start;
+    }
+    .titulo_de_pagina {
+        adding-top: 6rem;
+	    padding-bottom: 6rem;
+    }
+    .navbar {
+        margin-bottom: 2px;
+    }
+    .navbar-brand {
+        display: inline-block;
+        width: 50rem;
     }
 }
