@@ -17,6 +17,7 @@
            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
            <link rel="preconnect" href="https://fonts.googleapis.com">
            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+           <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
            <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap" rel="stylesheet">
            <title>Temple Informa Log-In</title>
        </head>
@@ -69,7 +70,7 @@
             </div>
           </header>
           <main>
-               <form class="col-xl-6 col-sm-12 border m-5 p-3 text-light bg-dark1 mx-auto">
+               <form class="col-xl-6 col-sm-12 border m-5 p-3 text-light bg-dark1 mx-auto" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Dirección de Email</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -115,7 +116,10 @@
             new WOW().init();
         </script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     
       </body>
     </html>

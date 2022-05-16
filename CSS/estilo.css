@@ -248,6 +248,33 @@ h1 {
   margin-top: 20rem;
   margin-bottom: 2rem; }
 
+h1 {
+  padding: 50px;
+  font-size: 5em;
+  font-weight: bold;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  text-align: center; }
+
+.txt2 {
+  color: rgba(0, 0, 0, 0);
+  text-shadow: #fff 0 0 60px;
+  transition: text-shadow 2s cubic-bezier(0, 1, 0, 1); }
+
+h1:hover .txt2 {
+  text-shadow: #fff 0 0 5px;
+  transition: text-shadow 1s cubic-bezier(0, 0.75, 0, 1); }
+
+.text1 {
+  margin: 0 10px;
+  color: rgba(0, 0, 0, 0);
+  text-shadow: yellow 0 0 5px;
+  transition: text-shadow 1s cubic-bezier(0, 1, 0, 1); }
+
+h1:hover .text1 {
+  text-shadow: yellow 0 0 100px;
+  transition: text-shadow 2s cubic-bezier(0, 0.75, 0, 1); }
+
 .publicidadPrincipal {
   grid-area: publicidadPrincipal;
   padding: 1rem;
@@ -426,7 +453,7 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 2fr  0.2fr;
     gap: 5px;
-    grid-template-areas: "header" "nosotros" "footer";
+    grid-template-areas: "header" "nosotros" "footer";
     align-content: space-around; }
   .fuerzasVivas {
     background-color: grey;
@@ -440,7 +467,7 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 2fr  0.2fr;
     gap: 5px;
-    grid-template-areas: "header" "instituciones" "footer";
+    grid-template-areas: "header" "instituciones" "footer";
     align-content: space-around; }
   .noticiasPoliciales {
     background-color: grey;
@@ -454,7 +481,7 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 2fr  0.2fr;
     gap: 5px;
-    grid-template-areas: "header" "policiales" "footer";
+    grid-template-areas: "header" "policiales" "footer";
     align-content: space-around; }
   .noticiasNecrologicas {
     background-color: grey;
@@ -468,7 +495,7 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 2fr  0.2fr;
     gap: 5px;
-    grid-template-areas: "header" "necrologicas" "footer";
+    grid-template-areas: "header" "necrologicas" "footer";
     align-content: space-around; }
   .noticiasMutual {
     background-color: grey;
@@ -482,7 +509,7 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 2fr  0.2fr;
     gap: 5px;
-    grid-template-areas: "header" "mutual" "footer";
+    grid-template-areas: "header" "mutual" "footer";
     align-content: space-around; }
   .vecinoMirate {
     background-color: grey;
@@ -496,7 +523,7 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 2fr  0.2fr;
     gap: 5px;
-    grid-template-areas: "header" "mirate" "footer";
+    grid-template-areas: "header" "mirate" "footer";
     align-content: space-around; }
   .noticiasCooperativa {
     background-color: grey;
@@ -510,7 +537,7 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 2fr  0.2fr;
     gap: 5px;
-    grid-template-areas: "header" "cooperativa" "footer";
+    grid-template-areas: "header" "cooperativa" "footer";
     align-content: space-around; }
   .loguin {
     background-color: grey;
@@ -524,7 +551,7 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 2fr  0.2fr;
     gap: 5px;
-    grid-template-areas: "header" "loguearse" "footer";
+    grid-template-areas: "header" "loguearse" "footer";
     align-content: space-around; }
   .iniciarSesion {
     background-color: grey;
@@ -538,7 +565,7 @@ h1 {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 2fr  0.2fr;
     gap: 5px;
-    grid-template-areas: "header" "sesion" "footer";
+    grid-template-areas: "header" "sesion" "footer";
     align-content: space-around; }
   .titulo_secundario {
     font-size: 2rem; }
@@ -702,7 +729,7 @@ h1 {
   grid-template-rows: 0.5fr 2fr  0.5fr;
   grid-row-gap: 5px;
   grid-column-gap: 5px;
-  grid-template-areas: "header" "nosotros" "footer";
+  grid-template-areas: "header" "nosotros" "footer";
   align-content: space-around; }
 
 .fuerzasVivas {
@@ -717,7 +744,7 @@ h1 {
   grid-template-rows: 0.5fr 2fr  0.5fr;
   grid-row-gap: 5px;
   grid-column-gap: 5px;
-  grid-template-areas: "header" "instituciones" "footer";
+  grid-template-areas: "header" "instituciones" "footer";
   align-content: space-around; }
 
 .noticiasMutual {
@@ -732,7 +759,7 @@ h1 {
   grid-template-rows: 0.3fr 2fr  0.3fr;
   grid-row-gap: 5px;
   grid-column-gap: 5px;
-  grid-template-areas: "header" "mutual" "footer";
+  grid-template-areas: "header" "mutual" "footer";
   align-content: space-around; }
 
 .vecinoMirate {
@@ -747,7 +774,7 @@ h1 {
   grid-template-rows: 0.3fr 2fr  0.3fr;
   grid-row-gap: 5px;
   grid-column-gap: 5px;
-  grid-template-areas: "header" "mirate" "footer";
+  grid-template-areas: "header" "mirate" "footer";
   align-content: space-around; }
 
 .noticiasCooperativa {
@@ -762,7 +789,7 @@ h1 {
   grid-template-rows: 0.3fr 2fr  0.3fr;
   grid-row-gap: 5px;
   grid-column-gap: 5px;
-  grid-template-areas: "header" "cooperativa" "footer";
+  grid-template-areas: "header" "cooperativa" "footer";
   align-content: space-around; }
 
 .iniciarSesion {
@@ -777,7 +804,7 @@ h1 {
   grid-template-rows: 0.5fr 1fr  0.5fr;
   grid-row-gap: 5px;
   grid-column-gap: 5px;
-  grid-template-areas: "header" "sesion" "footer";
+  grid-template-areas: "header" "sesion" "footer";
   align-content: space-around; }
 
 .nosotros {
