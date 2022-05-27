@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans");
 * {
   margin: 0;
   padding: 0;
@@ -17,26 +17,63 @@
   margin: 5px;
   padding: 2px; }
   .navbar .data ul li:hover {
-    background-color: grey;
+    background-color: #cbcf0e;
     color: black;
     border-radius: 10%; }
 
 .navbar .d-flex {
   font-family: 'Open Sans', sans-serif; }
 
-.navbar .btn-outline-success {
-  color: wheat;
-  border-color: wheat; }
-  .navbar .btn-outline-success:hover {
-    background-color: grey;
-    border-color: white; }
+.navbar .btnstyle {
+  --color: #cbcf0e;
+  font-family: inherit;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 8px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color); }
+
+.navbar .btnstyle:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%; }
+
+.navbar .btnstyle:hover {
+  color: #fff; }
+
+.navbar .btnstyle:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s; }
+
+.navbar .btnstyle:hover:before {
+  top: -30px;
+  left: -30px; }
+
+.navbar .btnstyle:active:before {
+  background: #3a0ca3;
+  transition: background 0s; }
 
 body {
-  background-image: url("../media/portada2.jpg");
+  background-image: url("../media/portada.jpeg");
   margin-right: 2rem;
-  margin-left: 2rem; }
-
-body {
+  margin-left: 2rem;
   animation-name: fondo;
   animation-duration: 15s;
   animation-timing-function: linear;
@@ -62,222 +99,160 @@ body {
     background-size: 100.5%; }
   100% {
     background-size: 100%; } }
-
-.titulo_de_pagina {
-  padding-top: 15rem;
-  padding-bottom: 10rem;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 5rem;
-  color: #dddd2a; }
-  .titulo_de_pagina span {
-    transition: 2s linear; }
-  .titulo_de_pagina:hover span {
-    transition: 2s;
-    color: #dddd2a;
-    text-shadow: 0 0 10px wheat, 0 0 15px wheat, 0 0 30px wheat; }
-    .titulo_de_pagina:hover span:nth-child(2) {
-      margin-right: 10px; }
-      .titulo_de_pagina:hover span:nth-child(2):after {
-        content: ", está en"; }
-    .titulo_de_pagina:hover span:nth-child(1) {
-      display: none; }
-    .titulo_de_pagina:hover span:nth-child(3):after {
-      content: " Informa"; }
-    .titulo_de_pagina:hover span:nth-child(4) {
-      display: none; }
-
-.row .ultimasNoticias {
-  text-align: center;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem; }
-  .row .ultimasNoticias .titulo_principal {
+  body .row .ultimasNoticias {
     text-align: center;
-    color: beige;
-    text-decoration: underline;
-    font-family: 'Poppins', sans-serif;
-    font-size: 3rem; }
-
-.row .fotoUltimasNoticias {
-  opacity: 0.8;
-  border: 1px double goldenrod;
-  transition: all 0.5s; }
-  .row .fotoUltimasNoticias:hover {
-    opacity: 1;
-    border: 1px solid yellow;
-    transform: scale(1.03);
-    border-radius: 10px; }
-
-.row .fotoNoticiaDeLaSemana {
-  opacity: 0.8;
-  border: 1px double goldenrod;
-  transition: all 0.5s; }
-  .row .fotoNoticiaDeLaSemana:hover {
-    opacity: 1;
-    border: 1px solid yellow;
-    transform: scale(1.03);
-    border-radius: 10px; }
-
-.row h5 {
-  font-family: "Poppins", sans-serif;
-  color: yellow;
-  background-color: #353333a4; }
-
-.row .ps-x {
-  margin-left: 24rem; }
-
-.row p {
-  font-family: "Poppins", sans-serif;
-  color: yellow;
-  background-color: #353333a4; }
-
-.noticiasDeLaSemana {
-  grid-area: noticiasDeLaSemana;
-  background-color: #353333;
-  border: 5px;
-  border-color: yellow;
-  border-radius: 10px;
-  text-align: center;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: column;
-  overflow: scroll; }
-  .noticiasDeLaSemana .titulo_secundario {
-    text-align: center;
-    color: beige;
-    text-decoration: underline;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2rem; }
-  .noticiasDeLaSemana .bg-text {
-    background-color: rgba(0, 0, 0, 0.541); }
-
-.noticiasVarias {
-  grid-area: noticiasVarias;
-  padding: 1rem;
-  margin: 0.5rem;
-  background-color: #353333;
-  border: 5px;
-  border-color: yellow;
-  border-radius: 10px;
-  text-align: center;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start; }
-  .noticiasVarias .videoSecundario {
-    width: 15%;
-    height: 10rem;
-    opacity: 0.5;
-    border: 1px double goldenrod; }
-    .noticiasVarias .videoSecundario:hover {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem; }
+    body .row .ultimasNoticias .titulo_principal {
+      text-align: center;
+      color: beige;
+      text-decoration: underline;
+      font-family: 'Poppins', sans-serif;
+      font-size: 3rem; }
+  body .row .fotoUltimasNoticias {
+    opacity: 0.8;
+    border: 1px double goldenrod;
+    transition: all 0.5s; }
+    body .row .fotoUltimasNoticias:hover {
       opacity: 1;
-      border: 1px solid yellow; }
-  .noticiasVarias .audio {
-    width: 10%;
-    order: -1; }
+      border: 1px solid yellow;
+      transform: scale(1.03);
+      border-radius: 10px; }
+  body .row .fotoNoticiaDeLaSemana {
+    display: flex;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+    border: 1px double goldenrod;
+    transition: all 0.5s; }
+    body .row .fotoNoticiaDeLaSemana:hover {
+      opacity: 1;
+      border: 1px solid yellow;
+      transform: scale(1.03);
+      border-radius: 10px; }
+  body .row h5 {
+    font-family: "Poppins", sans-serif;
+    color: yellow;
+    background-color: #353333a4; }
+  body .row .noticiasDeLaSemana {
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    border: 1px double goldenrod;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll; }
+    body .row .noticiasDeLaSemana .titulo_secundario {
+      text-align: center;
+      color: beige;
+      text-decoration: underline;
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem; }
+    body .row .noticiasDeLaSemana .bg-text {
+      background-color: rgba(0, 0, 0, 0.541); }
+  body .row .noticiasVarias {
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: #353333;
+    border: 5px;
+    border-color: yellow;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start; }
+    body .row .noticiasVarias .videoSecundario {
+      width: 15%;
+      height: 10rem;
+      opacity: 0.5;
+      border: 1px double goldenrod; }
+      body .row .noticiasVarias .videoSecundario:hover {
+        opacity: 1;
+        border: 1px solid yellow; }
+    body .row .noticiasVarias .audio {
+      width: 10%;
+      order: -1; }
+  body .row .ps-x {
+    margin-left: 24rem; }
+  body .row p {
+    font-family: "Poppins", sans-serif;
+    color: yellow;
+    background-color: #353333a4; }
+  body tit {
+    font-family: "Poppins", sans-serif;
+    color: #80800c;
+    font-size: 3rem; }
+  body h3 {
+    font-family: "Poppins", sans-serif;
+    color: #80800c;
+    font-size: 2rem; }
+  body #notastv .titulares {
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 80px; }
+  body .pagination {
+    margin-top: 30px;
+    margin-bottom: 40px; }
+  body .pagination ul {
+    text-align: center;
+    width: 100%; }
+  body .pagination ul li {
+    display: inline;
+    margin: 0px 5px; }
+  body .pagination ul li a {
+    width: 44px;
+    height: 44px;
+    border: 1px solid #2a2a2a;
+    display: inline-block;
+    text-align: center;
+    line-height: 44px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2a2a2a; }
+  body .pagination ul li a:hover,
+  body .pagination ul li.active a {
+    background-color: #2a2a2a;
+    color: #fff; }
+  body .video-responsive {
+    overflow: hidden;
+    padding-bottom: 200px;
+    position: relative;
+    height: 0; }
+  body .video-responsive iframe {
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute; }
+  body .txt2 {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: #fff 0 0 60px;
+    transition: text-shadow 2s cubic-bezier(0, 1, 0, 1); }
+  body h1:hover .txt2 {
+    text-shadow: #fff 0 0 5px;
+    transition: text-shadow 1s cubic-bezier(0, 0.75, 0, 1); }
+  body .text1 {
+    margin: 0 10px;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: yellow 0 0 5px;
+    transition: text-shadow 1s cubic-bezier(0, 1, 0, 1); }
+  body h1:hover .text1 {
+    text-shadow: yellow 0 0 100px;
+    transition: text-shadow 2s cubic-bezier(0, 0.75, 0, 1); }
 
-tit {
-  font-family: "Poppins", sans-serif;
-  color: #80800c;
-  font-size: 3rem; }
-
-h3 {
-  font-family: "Poppins", sans-serif;
-  color: #80800c;
-  font-size: 2rem; }
-
-#notastv .titulares {
-  text-align: center;
-  margin-bottom: 60px;
-  margin-top: 80px; }
-
-.pagination {
-  margin-top: 30px;
-  margin-bottom: 40px; }
-
-.pagination ul {
-  text-align: center;
-  width: 100%; }
-
-.pagination ul li {
-  display: inline;
-  margin: 0px 5px; }
-
-.pagination ul li a {
-  width: 44px;
-  height: 44px;
-  border: 1px solid #2a2a2a;
-  display: inline-block;
-  text-align: center;
-  line-height: 44px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #2a2a2a; }
-
-.pagination ul li a:hover,
-.pagination ul li.active a {
-  background-color: #2a2a2a;
-  color: #fff; }
-
-.video-responsive {
-  overflow: hidden;
-  padding-bottom: 200px;
-  position: relative;
-  height: 0; }
-
-.video-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  position: absolute; }
-
-h1 {
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  color: yellow;
-  text-shadow: #5a5a5a;
-  font-size: 5rem;
-  margin-top: 20rem;
-  margin-bottom: 2rem; }
-
-h1 {
-  padding: 50px;
-  font-size: 5em;
-  font-weight: bold;
-  margin-top: 15rem;
-  margin-bottom: 10rem;
-  text-align: center; }
-
-.txt2 {
-  color: rgba(0, 0, 0, 0);
-  text-shadow: #fff 0 0 60px;
-  transition: text-shadow 2s cubic-bezier(0, 1, 0, 1); }
-
-h1:hover .txt2 {
-  text-shadow: #fff 0 0 5px;
-  transition: text-shadow 1s cubic-bezier(0, 0.75, 0, 1); }
-
-.text1 {
-  margin: 0 10px;
-  color: rgba(0, 0, 0, 0);
-  text-shadow: yellow 0 0 5px;
-  transition: text-shadow 1s cubic-bezier(0, 1, 0, 1); }
-
-h1:hover .text1 {
-  text-shadow: yellow 0 0 100px;
-  transition: text-shadow 2s cubic-bezier(0, 0.75, 0, 1); }
-
-.publicidadPrincipal {
-  grid-area: publicidadPrincipal;
-  padding: 1rem;
+.publicidad {
+  padding: 0.5rem;
   margin: 0.5rem;
   background-color: #5a5a5a;
   border: 2px;
@@ -285,41 +260,11 @@ h1:hover .text1 {
   border-radius: 10px;
   border: black double 5px;
   border-top: 5px black double;
-  border-bottom: 5px black double;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center; }
-  .publicidadPrincipal .imagenPublicidadPrincipal {
+  border-bottom: 5px black double; }
+  .publicidad .imagenPublicidad {
     width: 90%;
     height: 13rem;
     animation-name: animation;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
-    animation-duration: 2s;
-    animation-delay: 10s; }
-
-.publicidadSecundaria {
-  grid-area: publicidadPrincipal;
-  padding: 1rem;
-  margin: 0.5rem;
-  background-color: #5a5a5a;
-  border: 2px;
-  border-color: yellow;
-  border-radius: 10px;
-  border: black double 5px;
-  border-top: 5px black double;
-  border-bottom: 5px black double;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center; }
-  .publicidadSecundaria .imagenPublicidadSecundaria {
-    width: 32%;
-    height: 8rem;
-    animation-name: animatio2;
     animation-iteration-count: infinite;
     animation-timing-function: ease;
     animation-duration: 2s;
@@ -365,6 +310,10 @@ h1:hover .text1 {
       color: black;
       background-color: grey;
       border-radius: 20%; }
+  .footer .pf {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: transparent; }
 
 @keyframes animation {
   0% {
@@ -434,264 +383,158 @@ h1:hover .text1 {
     height: 8rem;
     opacity: 1; } }
 
+@keyframes an1 {
+  0% {
+    transform: rotate(0); }
+  5% {
+    transform: rotate(3deg); }
+  15% {
+    transform: rotate(-2.5deg); }
+  25% {
+    transform: rotate(2deg); }
+  35% {
+    transform: rotate(-1.5deg); }
+  45% {
+    transform: rotate(1deg); }
+  55% {
+    transform: rotate(-1.5deg); }
+  65% {
+    transform: rotate(2deg); }
+  75% {
+    transform: rotate(-2deg); }
+  85% {
+    transform: rotate(2.5deg); }
+  95% {
+    transform: rotate(-3deg); }
+  100% {
+    transform: rotate(0); } }
+
 @media only screen and (max-width: 600px) {
   body {
-    background-image: url("../media/portada2.jpg");
+    background-image: url("../media/portada.jpeg");
     background-size: cover;
     background-repeat: repeat;
     background-attachment: fixed;
     background-position: center center; }
-  .quienesSomos {
-    background-color: grey;
-    background-image: url(./Fotos_y_videos/background8.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 99%;
-    margin: 10px auto;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 2fr  0.2fr;
-    gap: 5px;
-    grid-template-areas: "header" "nosotros" "footer";
-    align-content: space-around; }
-  .fuerzasVivas {
-    background-color: grey;
-    background-image: url(./Fotos_y_videos/background8.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 99%;
-    margin: 10px auto;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 2fr  0.2fr;
-    gap: 5px;
-    grid-template-areas: "header" "instituciones" "footer";
-    align-content: space-around; }
-  .noticiasPoliciales {
-    background-color: grey;
-    background-image: url(./Fotos_y_videos/background8.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 99%;
-    margin: 10px auto;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 2fr  0.2fr;
-    gap: 5px;
-    grid-template-areas: "header" "policiales" "footer";
-    align-content: space-around; }
-  .noticiasNecrologicas {
-    background-color: grey;
-    background-image: url(./Fotos_y_videos/background8.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 99%;
-    margin: 10px auto;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 2fr  0.2fr;
-    gap: 5px;
-    grid-template-areas: "header" "necrologicas" "footer";
-    align-content: space-around; }
-  .noticiasMutual {
-    background-color: grey;
-    background-image: url(./Fotos_y_videos/background8.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 99%;
-    margin: 10px auto;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 2fr  0.2fr;
-    gap: 5px;
-    grid-template-areas: "header" "mutual" "footer";
-    align-content: space-around; }
-  .vecinoMirate {
-    background-color: grey;
-    background-image: url(./Fotos_y_videos/background8.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 99%;
-    margin: 10px auto;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 2fr  0.2fr;
-    gap: 5px;
-    grid-template-areas: "header" "mirate" "footer";
-    align-content: space-around; }
-  .noticiasCooperativa {
-    background-color: grey;
-    background-image: url(./Fotos_y_videos/background8.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 99%;
-    margin: 10px auto;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 2fr  0.2fr;
-    gap: 5px;
-    grid-template-areas: "header" "cooperativa" "footer";
-    align-content: space-around; }
-  .loguin {
-    background-color: grey;
-    background-image: url(./Fotos_y_videos/background8.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 99%;
-    margin: 10px auto;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 2fr  0.2fr;
-    gap: 5px;
-    grid-template-areas: "header" "loguearse" "footer";
-    align-content: space-around; }
-  .iniciarSesion {
-    background-color: grey;
-    background-image: url(./Fotos_y_videos/background8.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 99%;
-    margin: 10px auto;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.2fr 2fr  0.2fr;
-    gap: 5px;
-    grid-template-areas: "header" "sesion" "footer";
-    align-content: space-around; }
-  .titulo_secundario {
-    font-size: 2rem; }
-  p {
-    font-size: 1rem; }
-  .fotoUltimasNoticias {
-    width: 23rem; }
-  .fotoNoticiaDeLaSemana {
-    width: 17rem; }
-  .videoCentral {
-    width: 20rem; }
-  .videoSecundario {
-    width: 10rem; }
-  .titulo_de_pagina {
-    font-size: 3rem; }
-  .carousel-caption {
-    font-size: 1rem; }
-  .card-title {
-    font-size: 1rem; }
-  .tit {
-    font-size: 2rem; }
-  h1 {
-    font-size: 3rem; }
-  h3 {
-    font-size: 1rem; }
-  .titulo_principal {
-    text-align: start; }
-  .titulo_de_pagina {
-    adding-top: 6rem;
-    padding-bottom: 6rem; }
-  .navbar {
-    margin-bottom: 2px; }
-  .navbar-brand {
-    display: inline-block;
-    width: 50rem; } }
+    body .titulo_secundario {
+      font-size: 2rem; }
+    body p {
+      font-size: 1rem; }
+    body .fotoUltimasNoticias {
+      width: 23rem; }
+    body .fotoNoticiaDeLaSemana {
+      width: 17rem; }
+    body .videoCentral {
+      width: 20rem; }
+    body .videoSecundario {
+      width: 10rem; }
+    body .titulo_de_pagina {
+      font-size: 3rem; }
+    body .carousel-caption {
+      font-size: 1rem; }
+    body .card-title {
+      font-size: 1rem; }
+    body .tit {
+      font-size: 1.5rem; }
+    body h1 {
+      font-size: 2rem; }
+    body h3 {
+      font-size: 1rem; }
+    body h5 {
+      font-size: 1rem; }
+    body p {
+      font-size: 0.8rem; }
+    body .titulo_principal {
+      text-align: start; }
+    body .titulo_de_pagina {
+      padding-top: 6rem;
+      padding-bottom: 6rem; }
+    body .navbar {
+      margin-bottom: 2px; }
+    body .navbar-brand {
+      display: inline-block;
+      width: 50rem; }
+    body .varios {
+      padding: 2rem;
+      margin: 0.1rem; }
+    body .fotoNoticiaDeLaSemana {
+      margin-top: 3rem;
+      margin-bottom: 2rem; }
+    body .publicidad {
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+    body .imagenPublicidad {
+      padding-top: 2rem;
+      padding-bottom: 2rem; }
+    body .video-responsive {
+      margin-top: 1rem; } }
 
-.noticiasNecrologicas {
-  background-image: url("/Fotos_y_videos/background8.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 99%;
-  margin: 10px auto;
-  padding: 0.5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.3fr 2fr  0.3fr;
-  grid-row-gap: 5px;
-  grid-column-gap: 5px;
-  grid-template-areas: "header" "necrologicas" "footer";
-  align-content: space-around; }
-
-.necrologicas {
-  grid-area: necrologicas;
-  padding: 1rem;
-  margin: 0.5rem;
-  background-color: #353333;
-  border: black double 5px;
-  text-align: justify;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
+.btnstyle {
+  --color: #cbcf0e;
+  font-family: inherit;
+  display: inline-block;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start; }
-
-.loguin {
-  background-image: url("/Fotos_y_videos/background8.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 99%;
-  margin: 10px auto;
-  padding: 0.5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr  0.5fr;
-  grid-row-gap: 5px;
-  grid-column-gap: 5px;
-  grid-template-areas: "header" "loguearse" "footer";
-  align-content: space-around; }
-
-.loguearse {
-  grid-area: loguearse;
-  padding: 1rem;
-  margin: 0.5rem;
-  text-align: justify;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  display: flex;
+  justify-content: center;
   align-items: center;
-  align-content: center; }
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color); }
+  .btnstyle:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 50%;
+    top: 100%;
+    left: 100%;
+    transition: all .7s; }
+  .btnstyle:hover {
+    color: #fff; }
+    .btnstyle:hover:before {
+      top: -30px;
+      left: -30px; }
+  .btnstyle:active:before {
+    background: #3a0ca3;
+    transition: background 0s; }
 
-.noticiasPoliciales {
-  background-image: url("/Fotos_y_videos/background8.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 99%;
-  margin: 10px auto;
-  padding: 0.5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 2fr  0.5fr;
-  grid-row-gap: 5px;
-  grid-column-gap: 5px;
-  grid-template-areas: "header" "policiales" "footer";
-  align-content: space-around; }
-
-.policiales {
-  grid-area: policiales;
-  padding: 1rem;
-  margin: 0.5rem;
-  background-color: #353333;
-  border: black double 5px;
-  text-align: justify;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
+.error404 {
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Merriweather Sans', sans-serif; }
+  .error404 #errorText {
+    font-size: 22px;
+    margin: 14px 0; }
+  .error404 #errorLink {
+    font-size: 20px;
+    padding: 12px;
+    border: 1px solid;
+    color: #000;
+    background-color: transparent;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out; }
+    .error404 #errorLink:hover, .error404 #errorLink:active {
+      color: #fff;
+      background: #000; }
+  .error404 #g6219 {
+    transform-origin: 85px 4px;
+    animation: an1 12s .5s infinite ease-out; }
 
 .bg-dark1 {
   background: rgba(63, 60, 60, 0.25);
@@ -709,207 +552,20 @@ h1:hover .text1 {
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18); }
 
-.grid {
-  background-image: "/fotos_y_videos/background8.png";
-  background-repeat: no-repeat;
-  background-size: cover; }
-
-.header, .noticiasVarias, .publicidadPrincipal, .publicidadSecundaria, .footer {
-  border-radius: 10px; }
-
-.quienesSomos {
-  background-image: "/fotos_y_videos/background8.png";
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 99%;
-  margin: 10px auto;
-  padding: 0.5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 2fr  0.5fr;
-  grid-row-gap: 5px;
-  grid-column-gap: 5px;
-  grid-template-areas: "header" "nosotros" "footer";
-  align-content: space-around; }
-
-.fuerzasVivas {
-  background-image: url("/Fotos_y_videos/background8.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 99%;
-  margin: 10px auto;
-  padding: 0.5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 2fr  0.5fr;
-  grid-row-gap: 5px;
-  grid-column-gap: 5px;
-  grid-template-areas: "header" "instituciones" "footer";
-  align-content: space-around; }
-
-.noticiasMutual {
-  background-image: url("/Fotos_y_videos/background8.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 99%;
-  margin: 10px auto;
-  padding: 0.5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.3fr 2fr  0.3fr;
-  grid-row-gap: 5px;
-  grid-column-gap: 5px;
-  grid-template-areas: "header" "mutual" "footer";
-  align-content: space-around; }
-
-.vecinoMirate {
-  background-image: url("/Fotos_y_videos/background8.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 99%;
-  margin: 10px auto;
-  padding: 0.5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.3fr 2fr  0.3fr;
-  grid-row-gap: 5px;
-  grid-column-gap: 5px;
-  grid-template-areas: "header" "mirate" "footer";
-  align-content: space-around; }
-
-.noticiasCooperativa {
-  background-image: url("/Fotos_y_videos/background8.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 99%;
-  margin: 10px auto;
-  padding: 0.5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.3fr 2fr  0.3fr;
-  grid-row-gap: 5px;
-  grid-column-gap: 5px;
-  grid-template-areas: "header" "cooperativa" "footer";
-  align-content: space-around; }
-
-.iniciarSesion {
-  background-image: url("/Fotos_y_videos/background8.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 99%;
-  margin: 10px auto;
-  padding: 0.5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.5fr 1fr  0.5fr;
-  grid-row-gap: 5px;
-  grid-column-gap: 5px;
-  grid-template-areas: "header" "sesion" "footer";
-  align-content: space-around; }
-
-.nosotros {
-  grid-area: nosotros;
-  padding: 1rem;
-  margin: 0.5rem;
-  background-color: #353333;
-  border: black double 5px;
-  text-align: justify;
-  color: white;
+h1 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start; }
+  text-align: center;
+  color: yellow;
+  text-shadow: #5a5a5a;
+  font-size: 5rem;
+  margin-top: 20rem;
+  margin-bottom: 2rem;
+  padding: 50px;
+  font-size: 5em;
+  font-weight: bold;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  text-align: center; }
 
-.instituciones {
-  grid-area: instituciones;
-  padding: 1rem;
-  margin: 0.5rem;
-  background-color: #353333;
-  border: black double 5px;
-  text-align: justify;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start; }
-
-.mutual {
-  grid-area: mutual;
-  padding: 1rem;
-  margin: 0.5rem;
-  background-color: #353333;
-  border: black double 5px;
-  text-align: justify;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start; }
-
-.mirate {
-  grid-area: mirate;
-  padding: 1rem;
-  margin: 0.5rem;
-  background-color: #353333;
-  border: black double 5px;
-  text-align: justify;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start; }
-
-.cooperativa {
-  grid-area: cooperativa;
-  padding: 1rem;
-  margin: 0.5rem;
-  background-color: #353333;
-  border: black double 5px;
-  text-align: justify;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start; }
-
-.sesion {
-  grid-area: sesion;
-  padding: 1rem;
-  margin: 0.5rem;
-  text-align: justify;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  align-content: center; }
-
-.videoPrincipal {
-  width: 50%; }
-
-.videoCentral {
-  width: 90%; }
-
-.formulario {
-  font-family: 'Open Sans', sans-serif;
-  color: white; }
+.copete {
+  color: red; }

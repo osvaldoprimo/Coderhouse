@@ -1,5 +1,4 @@
 .navbar{
-    
     .logoPrincipal {
         width: 30%;
         transition: all 0.5s;
@@ -16,7 +15,7 @@
             padding: 2px;
             li {
                 &:hover {
-                    background-color: grey;
+                    background-color: #cbcf0e;
                     color: black;
                     border-radius: 10%;
                 }
@@ -26,13 +25,51 @@
     .d-flex{
         font-family: 'Open Sans', sans-serif;
     }
-    .btn-outline-success {
-        color: wheat;
-        border-color: wheat;
-        &:hover {
-            background-color: grey;
-            border-color: white;
-        }
+    .btnstyle{
+        --color: #cbcf0e;
+        font-family: inherit;
+        display: inline-block;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width: 8em;
+        height: 2.6em;
+        line-height: 2.5em;
+        margin: 8px;
+        position: relative;
+        overflow: hidden;
+        border: 2px solid var(--color);
+        transition: color .5s;
+        z-index: 1;
+        font-size: 17px;
+        border-radius: 6px;
+        font-weight: 500;
+        color: var(--color);
+    }
+    .btnstyle:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: var(--color);
+        height: 150px;
+        width: 200px;
+        border-radius: 50%;
+    }
+    .btnstyle:hover {
+        color: #fff;
+    }
+    .btnstyle:before {
+        top: 100%;
+        left: 100%;
+        transition: all .7s;
+    }
+    .btnstyle:hover:before {
+        top: -30px;
+        left: -30px;
+    }
+    .btnstyle:active:before {
+        background: #3a0ca3;
+        transition: background 0s;
     }
 
 }

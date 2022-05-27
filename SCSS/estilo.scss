@@ -13,6 +13,8 @@
 @import "sectionNecrologicas";
 @import "sectionLog_in";
 @import "sectionPoliciales";
+@import "404";
+
 
 .bg-dark1{
     background: rgba( 63, 60, 60, 0.25 );
@@ -30,241 +32,22 @@
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
-
-
-.grid{
-    background-image: $fondoescritorio;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.header, .noticiasVarias, .publicidadPrincipal, .publicidadSecundaria, .footer{
-    border-radius: 10px;
-}
-
-
-.quienesSomos{
-    background-image: $fondoescritorio;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 99%;
-    margin: 10px auto;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 2fr  0.5fr;
-    grid-row-gap: 5px;
-    grid-column-gap: 5px;
-    grid-template-areas:
-    "header"
-    "nosotros"
-    "footer";
-    align-content: space-around;
-}
-.fuerzasVivas{
-    background-image: url("/Fotos_y_videos/background8.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 99%;
-    margin: 10px auto;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 2fr  0.5fr;
-    grid-row-gap: 5px;
-    grid-column-gap: 5px;
-    grid-template-areas:
-    "header"
-    "instituciones"
-    "footer";
-    align-content: space-around;  
-}
-.noticiasMutual{
-    background-image: url("/Fotos_y_videos/background8.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 99%;
-    margin: 10px auto;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 2fr  0.3fr;
-    grid-row-gap: 5px;
-    grid-column-gap: 5px;
-    grid-template-areas:
-    "header"
-    "mutual"
-    "footer";
-    align-content: space-around;
-}
-.vecinoMirate{
-    background-image: url("/Fotos_y_videos/background8.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 99%;
-    margin: 10px auto;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 2fr  0.3fr;
-    grid-row-gap: 5px;
-    grid-column-gap: 5px;
-    grid-template-areas:
-    "header"
-    "mirate"
-    "footer";
-    align-content: space-around;
-}
-.noticiasCooperativa{
-    background-image: url("/Fotos_y_videos/background8.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 99%;
-    margin: 10px auto;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 2fr  0.3fr;
-    grid-row-gap: 5px;
-    grid-column-gap: 5px;
-    grid-template-areas:
-    "header"
-    "cooperativa"
-    "footer";
-    align-content: space-around;
-}
-.iniciarSesion{
-    background-image: url("/Fotos_y_videos/background8.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 99%;
-    margin: 10px auto;
-    padding: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 1fr  0.5fr;
-    grid-row-gap: 5px;
-    grid-column-gap: 5px;
-    grid-template-areas:
-    "header"
-    "sesion"
-    "footer";
-    align-content: space-around;
-}
-.nosotros{
-    grid-area: nosotros;
-    padding: 1rem;
-    margin: 0.5rem;
-    background-color: rgb(53, 51, 51);
-    border: black double 5px;
-    text-align:justify;
-    color: white;
+h1 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items:flex-start;
-    align-content:flex-start;
+    text-align: center;
+    color: yellow;
+    text-shadow: #5a5a5a;
+    font-size: 5rem;
+    margin-top: 20rem;
+    margin-bottom: 2rem;
+    padding: 50px;
+    font-size: 5em;
+    font-weight: bold;
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+    text-align: center;
 }
-.instituciones{
-    grid-area: instituciones;
-    padding: 1rem;
-    margin: 0.5rem;
-    background-color: rgb(53, 51, 51);
-    border: black double 5px;
-    text-align:justify;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items:flex-start;
-    align-content:flex-start;
+.copete{
+    color: red;
 }
-.mutual{
-    grid-area: mutual;
-    padding: 1rem;
-    margin: 0.5rem;
-    background-color: rgb(53, 51, 51);
-    border: black double 5px;
-    text-align:justify;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items:flex-start;
-    align-content:flex-start;
-}
-.mirate{
-    grid-area: mirate;
-    padding: 1rem;
-    margin: 0.5rem;
-    background-color: rgb(53, 51, 51);
-    border: black double 5px;
-    text-align:justify;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items:flex-start;
-    align-content:flex-start;
-}
-.cooperativa{
-    grid-area: cooperativa;
-    padding: 1rem;
-    margin: 0.5rem;
-    background-color: rgb(53, 51, 51);
-    border: black double 5px;
-    text-align:justify;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items:flex-start;
-    align-content:flex-start;
-}
-
-.sesion{
-    grid-area: sesion;
-    padding: 1rem;
-    margin: 0.5rem;
-    text-align:justify;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-    display: flex;
-    align-items:center;
-    align-content:center;
-}
-.videoPrincipal{
-    width: 50%;
-}
-.videoCentral{
-    width: 90%;
-}
-.formulario{
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-}
-
-
-
-
-
-
-
-
-
 
